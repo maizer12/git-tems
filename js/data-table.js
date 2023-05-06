@@ -11,7 +11,7 @@
       "language": {
         "lengthMenu": "Показувати _MENU_ entries",
         "zeroRecords": "Nothing found - sorry",
-        "info": "Показувати _PAGE_ по _PAGES_ з 10 позицій",
+        "info": "Показувати _PAGE_ по _PAGES_ з _PAGES_ позицій",
         "infoEmpty": "No records available",
         "infoFiltered": "(filtered from _MAX_ total records)",
         "paginate": {

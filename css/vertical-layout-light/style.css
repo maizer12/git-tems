@@ -31603,6 +31603,38 @@ div.dataTables_wrapper div.dataTables_length select {
   opacity: 0.7;
 }
 
+.icon-arrow-down-w {
+  color: #1E91CF;
+  width: 11px;
+  height: 13px;
+  transform: rotate(180deg);
+}
+
+.card-body-wid {
+  background: none;
+}
+
+.card-body-wid #order-listing {
+  max-width: 1151px !important;
+}
+
+.card-body-wid .table, .card-body-wid .jsgrid .jsgrid-table, .jsgrid .card-body-wid .jsgrid-table, .card-body-wid .jsgrid .jsgrid-table {
+  --bs-table-accent-bg:#fff;
+}
+
+.row-gp {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-gp p {
+  margin-bottom: 2px;
+  border-radius: 3px;
+  display: inline;
+  width: fit-content;
+  padding: 2px 17px;
+}
+
 @media (max-width: 1200px) {
   .min-wid-cl {
     width: auto;
