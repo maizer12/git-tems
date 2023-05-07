@@ -31524,6 +31524,46 @@ div.tagsinput span.tag a {
   column-gap: 15px;
 }
 
+.df-it-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mar-r {
+  margin-right: 15px;
+}
+
+.mar-n {
+  margin-left: 4px;
+}
+
+.users-header {
+  align-items: end;
+}
+
+.users-header select.form-control, .users-header select.asColorPicker-input, .users-header .dataTables_wrapper select, .dataTables_wrapper .users-header select,
+.users-header .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .users-header select, .users-header .select2-container--default select.select2-selection--single, .select2-container--default .users-header select.select2-selection--single, .users-header .select2-container--default .select2-selection--single select.select2-search__field, .select2-container--default .select2-selection--single .users-header select.select2-search__field, .users-header select.typeahead,
+.users-header select.tt-query,
+.users-header select.tt-hint,
+.users-header select.asColorPicker-input,
+.users-header .dataTables_wrapper select,
+.users-header .jsgrid .jsgrid-table .jsgrid-filter-row select,
+.users-header .select2-container--default select.select2-selection--single,
+.users-header .select2-container--default .select2-selection--single select.select2-search__field,
+.users-header select.typeahead,
+.users-header select.tt-query,
+.users-header select.tt-hint {
+  border-radius: 1px;
+  padding: 6px 0;
+  padding-left: 4px;
+  background-color: #f1f0f0;
+  color: #C9C8C8;
+  background-color: #E9ECEF;
+  width: 70px;
+  color: #c9c8c8;
+}
+
 .min-wid-cl {
   width: 342px;
 }
@@ -31544,12 +31584,6 @@ div.tagsinput span.tag a {
 
 .table-responsive #order-listing {
   margin-bottom: 193px !important;
-}
-
-.card-body__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: -30px;
 }
 
 div.dataTables_wrapper div.dataTables_length select {
@@ -31604,7 +31638,7 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 .icon-arrow-down-w {
-  color: #1E91CF;
+  color: #1e91cf;
   width: 11px;
   height: 13px;
   transform: rotate(180deg);
@@ -31614,12 +31648,125 @@ div.dataTables_wrapper div.dataTables_length select {
   background: none;
 }
 
-.card-body-wid #order-listing {
-  max-width: 1151px !important;
+.card-body-wid .pad-btn {
+  padding: 12px 14px;
 }
 
-.card-body-wid .table, .card-body-wid .jsgrid .jsgrid-table, .jsgrid .card-body-wid .jsgrid-table, .card-body-wid .jsgrid .jsgrid-table {
-  --bs-table-accent-bg:#fff;
+.card-body-wid .badge-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.card-body-wid .badge-row p {
+  border-radius: 3px;
+  width: fit-content;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.card-body-wid .table, .card-body-wid .jsgrid .jsgrid-table, .jsgrid .card-body-wid .jsgrid-table,
+.card-body-wid .jsgrid .jsgrid-table {
+  --bs-table-accent-bg: #fff;
+}
+
+.card-body-wid .dataTables_wrapper .dataTable .btn, .card-body-wid .dataTables_wrapper .dataTable .fc button, .fc .card-body-wid .dataTables_wrapper .dataTable button, .card-body-wid .dataTables_wrapper .dataTable .ajax-upload-dragdrop .ajax-file-upload, .ajax-upload-dragdrop .card-body-wid .dataTables_wrapper .dataTable .ajax-file-upload, .card-body-wid .dataTables_wrapper .dataTable .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .card-body-wid .dataTables_wrapper .dataTable .swal2-styled, .card-body-wid .dataTables_wrapper .dataTable .wizard > .actions a, .wizard > .actions .card-body-wid .dataTables_wrapper .dataTable a,
+.card-body-wid .dataTables_wrapper .dataTable .fc button,
+.card-body-wid .fc .dataTables_wrapper .dataTable button,
+.card-body-wid .dataTables_wrapper .dataTable .ajax-upload-dragdrop .ajax-file-upload,
+.card-body-wid .ajax-upload-dragdrop .dataTables_wrapper .dataTable .ajax-file-upload,
+.card-body-wid .dataTables_wrapper .dataTable .swal2-modal .swal2-buttonswrapper .swal2-styled,
+.card-body-wid .swal2-modal .swal2-buttonswrapper .dataTables_wrapper .dataTable .swal2-styled,
+.card-body-wid .dataTables_wrapper .dataTable .wizard > .actions a,
+.card-body-wid .wizard > .actions .dataTables_wrapper .dataTable a {
+  padding: 12px;
+}
+
+.table-bd {
+  border-color: rgba(255, 0, 0, 0);
+}
+
+.card-body-inner {
+  margin-top: 12px;
+  display: flex;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+
+.card-body-inner__table {
+  max-width: 1151px;
+  width: 100%;
+}
+
+.card-body-inner__form {
+  width: 100%;
+  max-width: 353px;
+}
+
+.card-body-inner__header {
+  padding: 13px 15px;
+  background-color: #f8f9fa;
+  border-bottom: #dcdcdc 1px solid;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #4c4d5a;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.card-body-inner .form-group_bd {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 15px;
+}
+
+.card-body-inner .form-group {
+  margin-bottom: 1.1em;
+}
+
+.card-body-inner p {
+  margin-bottom: 0;
+}
+
+.card-body-inner .form-select {
+  height: 43px;
+}
+
+.card-body-inner .form-select:focus {
+  box-shadow: 0 0 0 gray;
+}
+
+.pagination-body-footer {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 19px;
+  align-items: center;
+}
+
+.pagination-body-footer__text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.border-opacity {
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .row-gp {

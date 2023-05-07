@@ -9,6 +9,7 @@
 	<!-- plugins:css -->
 	<link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
 	<link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+	<link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
 	<!-- endinject -->
 	<!-- Plugin css for this page -->
 	<link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
@@ -320,7 +321,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="pages/storage/form-create.html">
+						<a class="nav-link" href="../storage/storage.html">
 							<i class="ti-settings menu-icon"></i>
 							<span class="menu-title">Склади</span>
 						</a>
@@ -350,7 +351,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+						<a class="nav-link" href="../connections/connections.html" >
 							<i class="ti-layers-alt menu-icon"></i>
 							<span class="menu-title">Зв’язки</span>
 							<i class="menu-arrow"></i>
@@ -382,50 +383,184 @@
 				<div class="content-wrapper">
 					<div class="card">
 						<div class="card-body card-body-wid">
-							<h4 class="card-title">Клієнти</h4>
-							<div class="row">
-								<div class="col-12 ">
-									<div class="table-responsive">
-										<table id="order-listing" class="table">
-											<thead>
-												<tr>
-													<th>Ім’я клієнта <i class="icon-arrow-up icon-arrow-down-w"></i></th>
-													<th>Телефон</th>
-													<th>Группа клієнта</th>
-													<th>Дата створення</th>
-													<th></th>
-													<th>Тип клієнта</th>
-													<th>Управління</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="form-check form-check-flat form-check-primary">
-															<label class="form-check-label">
-																<input type="checkbox" class="form-check-input">
-																Alex Kar
-																<i class="input-helper"></i></label>
-														</div>
-													</td>
-													<td>2012/08/03</td>
-													<td>Edinburgh</td>
-													<td>New York</td>
-													<td></td>
-													<td class='row-gp'>
-														<p class='badge-primary'>Постачальник</p>
-														<p class='badge-success'>Клієнт</p>
-														<p class='badge-danger'>Дропшиппінг</p>
-													</td>
-													<td>
-														<button class="button btn-primary">On hold</button>
-													</td>
-												</tr>
-											
-											</tbody>
-										</table>
+							<div class="df-it-sp users-header">
+								<div class="users-header__item">
+									<h4 class="card-title mt-2 mb-3">Клієнти</h4>
+									<div class="dataTables_length mb-4" id="order-listing_length">
+										<label class='df-it-sp'><span class='d-block mar-r'>Показувати</span>
+											<select name="order-listing_length" aria-controls="order-listing"
+												class="custom-select custom-select-sm form-control">
+												<option value="5">5</option>
+												<option value="10">10</option>
+												<option value="15">15</option>
+												<option value="-1">All</option>
+											</select>
+											<span class='mar-n d-block'>entries</span> </label>
 									</div>
 								</div>
+								<button type="button" class=" btn btn-primary btn-lg">Додати клієнта</button>
+							</div>
+							<div class="card-body-inner">
+								<div class="card-body-inner__table">
+									<table class="table">
+										<thead class='table-bd'>
+											<tr>
+												<th>Ім’я клієнта <i class="icon-arrow-up"></i></th>
+												<th>Телефон</th>
+												<th>Группа клієнта</th>
+												<th>Дата створення</th>
+												<th>Тип клієнта</th>
+												<th>Управління</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="form-check mx-sm-2">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input" checked="">
+															Alex Kar
+															<i class="input-helper"></i></label>
+													</div>
+												</td>
+												<td>+380686978088</td>
+												<td>Опт</td>
+												<td>22/03/2021</td>
+												<td class='badge-row'>
+													<p class="badge badge-primary">Постачальник</p>
+													<p class="badge badge-success">Клієнт</p>
+													<p class="badge badge-danger">Дропшиппінг</p>
+												</td>
+												<td>
+													<div class="dropdown">
+														<button class="df-it pad-btn btn btn-primary dropdown-toggle" type="button"
+															id="dropdownMenuIconButton6" data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<i class="mdi mdi-lead-pencil"></i>
+														</button>
+														<div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6">
+															<h6 class="dropdown-header">Settings</h6>
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="form-check mx-sm-2">
+														<label class="form-check-label">
+															<input type="checkbox" class="form-check-input" checked="">
+															Alex Kar
+															<i class="input-helper"></i></label>
+													</div>
+												</td>
+												<td>+380686978088</td>
+												<td>Опт</td>
+												<td>22/03/2021</td>
+												<td class='badge-row'>
+													<p class="badge badge-primary">Постачальник</p>
+													<p class="badge badge-success">Клієнт</p>
+													<p class="badge badge-danger">Дропшиппінг</p>
+												</td>
+												<td>
+													<div class="dropdown">
+														<button class="df-it pad-btn btn btn-primary dropdown-toggle" type="button"
+															id="dropdownMenuIconButton6" data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<i class="mdi mdi-lead-pencil"></i>
+														</button>
+														<div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6">
+															<h6 class="dropdown-header">Settings</h6>
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Separated link</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="card-body-inner__form">
+									<div class="card-body-inner__header"> <i class="mdi mdi-filter"></i> Фільтр</div>
+									<form class="forms-sample">
+										<div class="form-group form-group_bd">
+											<label for="exampleInputUsername1">
+												<p class='fw-bold'>Ім’я клієнта</p>
+											</label>
+											<input type="text" class="form-control rounded-1" id="exampleInputUsername1"
+												placeholder="Ім’я клієнта">
+
+										</div>
+										<div class="form-group form-group_bd">
+											<label for="exampleInputUsernum1">
+												<p class='fw-bold'>Телефон</p>
+											</label>
+											<input type="number" class="form-control rounded-1" id="exampleInputUsernum1"
+												placeholder="Телефон">
+										</div>
+										<div class="form-group form-group_bd">
+											<label for="exampleInputUsernum1">
+												<p class='fw-bold'>Группа клієнта</p>
+											</label>
+											<input type="number" class="form-control rounded-1" id="exampleInputGrupnum1"
+												placeholder="Группа клієнта">
+										</div>
+										<div class="form-group form-group_bd">
+											<label for="exampleInputUsernum1">
+												<p class='fw-bold'>Статус</p>
+											</label>
+											<input type="number" class="form-control rounded-1" id="exampleInputGrupnum1"
+												placeholder="Статус">
+										</div>
+										<div class="form-group form-group_bd">
+											<label for="exampleInputUsernum1">
+												<p class='fw-bold'>Тип клієнта</p>
+											</label>
+											<select class="form-select fw-bold" aria-label="Default select example">
+												<option selected>Постачальник</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="form-group form-group_bd">
+											<label for="exampleInputUsernum1">
+												<p class='fw-bold'>IP</p>
+											</label>
+											<input type="number" class="form-control rounded-1" id="exampleInputGrupnum1" placeholder="IP">
+										</div>
+										<div class="form-group form-group_bd">
+											<label for="exampleInputDate">
+												<p class='fw-bold'>Date Added</p>
+											</label>
+											<input type="number" class="form-control rounded-1" id="exampleInputDate"
+												placeholder="Date Added">
+										</div>
+										<button type="submit" class="btn ms-auto d-flex align-items-center p-2.5 
+										pt-2.3 pb-2.3	fs-6 btn-outline-secondary btn-fw">
+											<i class="mdi mdi-filter"></i> Filter</button>
+									</form>
+
+								</div>
+
+							</div>
+							<div class="pagination-body-footer d-flex">
+								<p class="pagination-body-footer__text">Показувати 1 по 10 з 10 позицій</p>
+								<ul class="pagination flex-wrap">
+									<li class="page-item"><button class="page-link">Попередня</button></li>
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item"><button class="page-link" href="#">Наступна</button></li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -453,25 +588,15 @@
 	<!-- Plugin js for this page-->
 	<script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
 	<script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-	<!-- End plugin js for this page-->
-	<!-- inject:js -->
 	<script src="../../../../js/off-canvas.js"></script>
 	<script src="../../../../js/hoverable-collapse.js"></script>
 	<script src="../../../../js/template.js"></script>
 	<script src="../../../../js/settings.js"></script>
 	<script src="../../../../js/todolist.js"></script>
-	<!-- endinject -->
-	<!-- Custom js for this page-->
 	<script src="../../../../js/data-table.js"></script>
 	<script src="../../../../js/js-grid.js"></script>
-	<script src="../../../../vendors/js/vendor.bundle.base.js"></script>
-	<!-- endinject -->
-	<!-- Plugin js for this page -->
 	<script src="../../../../vendors/jsgrid/jsgrid.min.js"></script>
-	<script src="../../../../js/js-grid.js"></script>
 	<script src="../../../../js/db.js"></script>
-	<!-- End custom js for this page-->
-	<!-- End custom js for this page-->
 </body>
 
 </html>

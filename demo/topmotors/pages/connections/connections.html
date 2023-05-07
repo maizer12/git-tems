@@ -350,7 +350,7 @@
             </a>
           </li>
           <li class="nav-item active">
-						<a class="nav-link " href="#">
+            <a class="nav-link " href="#">
               <i class="ti-layers-alt menu-icon"></i>
               <span class="menu-title">Зв’язки</span>
               <i class="menu-arrow"></i>
@@ -369,7 +369,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../users/users.html" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link" href="../users/users.html">
               <i class="ti-user menu-icon"></i>
               <span class="menu-title">Користувачі</span>
               <i class="menu-arrow"></i>
@@ -382,102 +382,120 @@
         <div class="content-wrapper">
           <div class="card">
             <div class="card-body">
-              <div class="card-body__header">
-                <h4 class="card-title">Зв’язки</h4>
-                <a href='./form-connections.html' class="btn btn-primary btn-lg"> Створити зв’язок</a>
+              <div class="df-it-sp users-header">
+                <div class="users-header__item">
+                  <h4 class="card-title mt-2 mb-3">Зв’язки</h4>
+                  <div class="dataTables_length" id="order-listing_length">
+                    <label class='df-it-sp'><span class='d-block mar-r'>Показувати</span>
+                      <select name="order-listing_length" aria-controls="order-listing"
+                        class="custom-select custom-select-sm form-control">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="-1">All</option>
+                      </select>
+                      <span class='mar-n d-block'>entries</span> </label>
+                  </div>
+                </div>
+                <a href='./form-connections.html' type="button" class=" btn btn-primary btn-lg">Додати клієнта</a>
               </div>
-              <div class="row storage-table ">
+              <div class="row storage-table mt-3">
                 <div class="col-12">
                   <div class="table-responsive ">
                     <table id="order-listing" class="table">
-                      <thead>
-                        <tr>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class='table-pa'>
-                            <table id="sortable-table-1" class="table">
-                              <thead>
-                                <tr>
-                                  <th class='min-wid-cl'>ID</th>
-                                  <th class="sortStyle ">Ім’я</th>
-                                  <th class="sortStyle df-it jc-nd">Управління</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>Фільтр [Назва бренду]</td>
-                                  <td class='df-it jc-nd'>
-                                    <button class="btn-change btn-success df-it">
-                                      <i class="icon-wrench"></i>Редагувати
-                                    </button>
-                                    <button type="button" class="btn btn-delete btn-danger">Видалити</button>
-                                    
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class='table-pa'>
-                            <table id="sortable-table-1" class="table">
-                              <thead>
-                                <tr>
-                                  <th class='min-wid-cl'>ID</th>
-                                  <th class="sortStyle ">Ім’я</th>
-                                  <th class="sortStyle df-it jc-nd">Управління</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>Фільтр [Назва бренду]</td>
-                                  <td class='df-it jc-nd'>
-                                    <button class="btn-change btn-success df-it">
-                                      <i class="icon-wrench"></i>Редагувати
-                                    </button>
-                                    <button type="button" class="btn btn-delete btn-danger">Видалити</button>
-                                    
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class='table-pa'>
-                            <table id="sortable-table-1" class="table">
-                              <thead>
-                                <tr>
-                                  <th class='min-wid-cl'>ID</th>
-                                  <th class="sortStyle ">Ім’я</th>
-                                  <th class="sortStyle df-it jc-nd">Управління</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>Фільтр [Назва бренду]</td>
-                                  <td class='df-it jc-nd'>
-                                    <button class="btn-change btn-success df-it">
-                                      <i class="icon-wrench"></i>Редагувати
-                                    </button>
-                                    <button type="button" class="btn btn-delete btn-danger">Видалити</button>
-                                    
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
+                      <tr>
+                        <td class='table-pa'>
+                          <table id="sortable-table-1" class="table">
+                            <thead>
+                              <tr class='border-opacity'>
+                                <th class='min-wid-cl'>ID</th>
+                                <th class="sortStyle ">Ім’я</th>
+                                <th class="sortStyle df-it jc-nd">Управління</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Фільтр [Назва бренду]</td>
+                                <td class='df-it jc-nd'>
+                                  <button class="btn-change btn-success df-it">
+                                    <i class="icon-wrench"></i>Редагувати
+                                  </button>
+                                  <button type="button" class="btn btn-delete btn-danger">Видалити</button>
+                                 
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class='table-pa'>
+                          <table id="sortable-table-1" class="table">
+                            <thead>
+                              <tr>
+                                <th class='min-wid-cl'>ID</th>
+                                <th class="sortStyle ">Ім’я</th>
+                                <th class="sortStyle df-it jc-nd">Управління</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Фільтр [Назва бренду]</td>
+                                <td class='df-it jc-nd'>
+                                  <button class="btn-change btn-success df-it">
+                                    <i class="icon-wrench"></i>Редагувати
+                                  </button>
+                                  <button type="button" class="btn btn-delete btn-danger">Видалити</button>
+                                 
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class='table-pa'>
+                          <table id="sortable-table-1" class="table">
+                            <thead>
+                              <tr>
+                                <th class='min-wid-cl'>ID</th>
+                                <th class="sortStyle ">Ім’я</th>
+                                <th class="sortStyle df-it jc-nd">Управління</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Фільтр [Назва бренду]</td>
+                                <td class='df-it jc-nd'>
+                                  <button class="btn-change btn-success df-it">
+                                    <i class="icon-wrench"></i>Редагувати
+                                  </button>
+                                  <button type="button" class="btn btn-delete btn-danger">Видалити</button>
+                                 
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
 
                       </tbody>
                     </table>
                   </div>
+                </div>
+                <div class="pagination-body-footer d-flex">
+                  <p class="pagination-body-footer__text">Показувати 1 по 10 з 10 позицій</p>
+                  <ul class="pagination flex-wrap">
+                    <li class="page-item"><button class="page-link">Попередня</button></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><button class="page-link" href="#">Наступна</button></li>
+                  </ul>
                 </div>
               </div>
             </div>
