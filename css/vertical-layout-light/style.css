@@ -31683,7 +31683,11 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 .table-bd {
-  border-color: rgba(255, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.orders-items td {
+  color: #545454;
 }
 
 .card-body-inner {
@@ -31763,6 +31767,30 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.bg-black {
+  background-color: #151515;
+  color: #fff;
+}
+
+.bg-black:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.col-gap-df {
+  column-gap: 6px;
+}
+
+.bg-new {
+  background-color: #FD244B;
+  color: #fff;
+}
+
+.bg-new:hover {
+  background-color: #b81331;
+  color: #fff;
 }
 
 .border-opacity {

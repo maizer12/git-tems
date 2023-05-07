@@ -174,7 +174,13 @@ div.dataTables_wrapper div.dataTables_length select {
 	}
 }
 .table-bd {
-	border-color: rgba(red, 0);
+	border-color: rgba(rgb(0, 0, 0), 0);
+}
+
+.orders-items{
+	td{
+		color:#545454;
+	}
 }
 .card-body-inner {
 	margin-top: 12px;
@@ -243,6 +249,25 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0; 
+}
+.bg-black{
+	background-color:#151515;
+	color:#fff;
+	&:hover{
+		background-color:#000000;
+		color:#fff;
+	}
+}
+.col-gap-df{
+	column-gap:6px;
+}
+.bg-new{
+	background-color:#FD244B;
+	color:#fff;
+	&:hover{
+		background-color:#b81331;
+		color:#fff;
+	}
 }
 .border-opacity{
 	border-color: rgba(rgb(0, 0, 0), 0);
