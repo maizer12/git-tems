@@ -353,6 +353,9 @@ div.dataTables_wrapper div.dataTables_length select {
 		max-width: 92px;
 	}
 }
+.date-btn-input{
+	padding-right: 50px;
+}
 .order-item-buttons {
 	display: flex;
 	padding-right: 0 !important;
@@ -450,6 +453,13 @@ div.dataTables_wrapper div.dataTables_length select {
 		&:focus {
 			box-shadow: 0 0 0 gray;
 		}
+	}
+	.input-group-text{
+		cursor:pointer;
+		background:none;
+		border:0;
+		color:#666666;
+		border-left:#CCCCCC solid 2px;
 	}
 }
 .pagination-body-footer {

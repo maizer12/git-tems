@@ -2,27 +2,36 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Користувачі</title>
-	<!-- plugins:css -->
-	<link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
-	<link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
 	<link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
-	<!-- endinject -->
-	<!-- Plugin css for this page -->
-	<link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+	<link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="../../../../vendors/dropzone/dropzone.css">
+	<link rel="stylesheet" href="../../../../vendors/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-1to10.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-horizontal.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-movie.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-pill.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-reversed.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-square.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bootstrap-stars.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/css-stars.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/examples.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/fontawesome-stars-o.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/fontawesome-stars.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-asColorPicker/css/asColorPicker.min.css">
+	<link rel="stylesheet" href="../../../../vendors/x-editable/bootstrap-editable.css">
+	<link rel="stylesheet" href="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../../../../vendors/dropify/dropify.min.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-file-upload/uploadfile.css">
+	<link rel="stylesheet" href="../../../../vendors/jquery-tags-input/jquery.tagsinput.min.css">
+	<link rel="stylesheet" href="../../../../vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css">
 	<!-- End plugin css for this page -->
 	<!-- inject:css -->
 	<link rel="stylesheet" href="../../../../css/vertical-layout-light/style.css">
 	<!-- endinject -->
 	<link rel="shortcut icon" href="../../../../images/favicon.png" />
-	<!-- endinject -->
-	<!-- plugin css for this page -->
-	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid.min.css">
-	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid-theme.min.css">
-	<link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
 </head>
 
 <body class="sidebar-dark">
@@ -351,7 +360,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="../connections/connections.html" >
+						<a class="nav-link" href="../connections/connections.html">
 							<i class="ti-layers-alt menu-icon"></i>
 							<span class="menu-title">Зв’язки</span>
 							<i class="menu-arrow"></i>
@@ -506,21 +515,20 @@
 												placeholder="Телефон">
 										</div>
 										<div class="form-group form-group_bd">
-											<label for="exampleInputUsernum1">
+											<label for="exampleInputGrup1">
 												<p class='fw-bold'>Группа клієнта</p>
 											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputGrupnum1"
+											<input type="text" class="form-control rounded-1" id="exampleInputGrup1"
 												placeholder="Группа клієнта">
 										</div>
 										<div class="form-group form-group_bd">
-											<label for="exampleInputUsernum1">
+											<label for="exampleInputState1">
 												<p class='fw-bold'>Статус</p>
 											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputGrupnum1"
-												placeholder="Статус">
+											<input type="number" class="form-control rounded-1" id="exampleInputState1" placeholder="Статус">
 										</div>
 										<div class="form-group form-group_bd">
-											<label for="exampleInputUsernum1">
+											<label for="exampleInputUserType1">
 												<p class='fw-bold'>Тип клієнта</p>
 											</label>
 											<select class="form-select fw-bold" aria-label="Default select example">
@@ -531,18 +539,25 @@
 											</select>
 										</div>
 										<div class="form-group form-group_bd">
-											<label for="exampleInputUsernum1">
+											<label for="exampleInputIP1">
 												<p class='fw-bold'>IP</p>
 											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputGrupnum1" placeholder="IP">
+											<input type="number" class="form-control rounded-1" id="exampleInputIP1" placeholder="IP">
 										</div>
-										<div class="form-group form-group_bd">
-											<label for="exampleInputDate">
-												<p class='fw-bold'>Date Added</p>
-											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputDate"
-												placeholder="Date Added">
+										<div class="form-group form-group_bd ">
+											<div class="card-body p-0">
+												<label for="exampleInputDate">
+													<p class='fw-bold'>Date Added</p>
+												</label>
+												<div id="datepicker-popup" id='exampleInputDate' class="input-group date datepicker">
+													<input type="text" class="form-control ">
+													<span class="input-group-addon date-btn-address input-group-append  ">
+														<span class="fa fa-calendar input-group-text pl-14 pr-14"></span>
+													</span>
+												</div>
+											</div>
 										</div>
+
 										<button type="submit" class="btn ms-auto d-flex align-items-center p-2.5 
 										pt-2.3 pb-2.3	fs-6 btn-outline-secondary btn-fw">
 											<i class="mdi mdi-filter"></i> Filter</button>
@@ -575,17 +590,10 @@
 								class="ti-heart text-danger ms-1"></i></span>
 					</div>
 				</footer>
-				<!-- partial -->
 			</div>
-			<!-- main-panel ends -->
 		</div>
-		<!-- page-body-wrapper ends -->
 	</div>
-	<!-- container-scroller -->
-	<!-- plugins:js -->
 	<script src="../../../../vendors/js/vendor.bundle.base.js"></script>
-	<!-- endinject -->
-	<!-- Plugin js for this page-->
 	<script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
 	<script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
 	<script src="../../../../js/off-canvas.js"></script>
@@ -597,6 +605,8 @@
 	<script src="../../../../js/js-grid.js"></script>
 	<script src="../../../../vendors/jsgrid/jsgrid.min.js"></script>
 	<script src="../../../../js/db.js"></script>
+	<script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+	<script src="../../../../js/formpickers.js"></script>
 </body>
 
 </html>
