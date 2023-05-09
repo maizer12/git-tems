@@ -31558,8 +31558,8 @@ div.tagsinput span.tag a {
   padding: 6px 0;
   padding-left: 4px;
   background-color: #f1f0f0;
-  color: #C9C8C8;
-  background-color: #E9ECEF;
+  color: #c9c8c8;
+  background-color: #e9ecef;
   width: 70px;
   color: #c9c8c8;
 }
@@ -31690,6 +31690,49 @@ div.dataTables_wrapper div.dataTables_length select {
   color: #545454;
 }
 
+.orders-item {
+  max-width: 135px;
+}
+
+.orders-item__num {
+  color: #000000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.orders-item-client__name {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Open Sans;
+}
+
+.orders-item-client__text {
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #121212;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.orders-item-client__num {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a3a7ac;
+}
+
 .card-body-inner {
   margin-top: 12px;
   display: flex;
@@ -31784,7 +31827,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bg-new {
-  background-color: #FD244B;
+  background-color: #fd244b;
   color: #fff;
 }
 
