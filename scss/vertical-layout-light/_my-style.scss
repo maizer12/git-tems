@@ -222,6 +222,92 @@ div.dataTables_wrapper div.dataTables_length select {
 		color: #a3a7ac;
 	}
 }
+.orders-item-sum {
+	font-family: Open Sans;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.orders-item-date {
+	&__item {
+		font-family: Open Sans;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+}
+.dropdown .dropdown-menu .order-drop-item {
+	column-gap: 31px;
+	align-items: center;
+	padding: 13px 5px;
+	&__status {
+		font-family: Roboto;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 12px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	&__name {
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	&__text {
+		color: #000000;
+		font-family: Roboto;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	.status-disable {
+		color: #ff4747;
+	}
+	.status-shortage {
+		color: #f5a623;
+	}
+	.status-active {
+		color: #00a72f;
+	}
+}
+.dropdown-orders{
+	 .dropdown-toggle:after{
+		margin-left: 0.5rem;
+		margin-top: 0.3em; 
+	}
+}
+.dropdown .dropdown-toggle .order-drop-btn {
+	// &::after{
+	// 	margin-left: 10px;
+	// }
+	&__title {
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+	&__sub-title {
+		font-family: Open Sans;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 1;
+
+		letter-spacing: 0em;
+		text-align: left;
+	}
+}
 .card-body-inner {
 	margin-top: 12px;
 	display: flex;

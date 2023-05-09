@@ -312,7 +312,7 @@
 			<nav class="sidebar sidebar-offcanvas" id="sidebar">
 				<ul class="nav">
 					<li class="nav-item">
-						<a class="nav-link" href="../../index.html">
+						<a class="nav-link" href="./index.html">
 							<i class="ti-home menu-icon"></i>
 							<span class="menu-title">Головна</span>
 						</a>
@@ -323,8 +323,8 @@
 							<span class="menu-title">Склади</span>
 						</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" ref="#">
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/orders/orders.html">
 							<i class="ti-shopping-cart menu-icon"></i>
 							<span class="menu-title">Замовлення</span>
 							<i class="menu-arrow"></i>
@@ -339,18 +339,17 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
-							aria-controls="form-elements">
+						<a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-controls="form-elements">
 							<i class="ti-clipboard menu-icon"></i>
 							<span class="menu-title">Задачи</span>
 							<i class="menu-arrow"></i>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="../connections/connections.html">
+						<a class="nav-link" href="pages/connections/connections.html">
 							<i class="ti-layers-alt menu-icon"></i>
 							<span class="menu-title">Зв’язки</span>
-							<i class="ti-layers-alt menu-arrow"></i>
+							<i class="menu-arrow"></i>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -366,7 +365,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="../users/users.html">
+						<a class="nav-link" href="./pages/users/users.html">
 							<i class="ti-user menu-icon"></i>
 							<span class="menu-title">Користувачі</span>
 							<i class="menu-arrow"></i>
@@ -450,7 +449,56 @@
 																	<p class="orders-item-client__num"> +380 68 697-8088</p>
 																</td>
 																<td class='orders-item-sum'>
-																	25 0UAH
+																	250 UAH
+																</td>
+																<td class="orders-item-date">
+																	<p class="orders-item-date__item mb-0">15.04.2023</p>
+																	<p class="orders-item-date__item">10:30:12</p>
+																</td>
+																<td>
+																	<div class="template-demo d-flex justify-content-between flex-wrap">
+																		<div class="dropdown  dropdown-orders">
+																			<button type="button" class="btn p-2 btn-success d-flex dropdown-toggle"
+																				id="dropdownMenuIconButton4" data-bs-toggle="dropdown" aria-haspopup="true"
+																				aria-expanded="false">
+																				<div class="order-drop-btn__column">
+																					<h5 class="order-drop-btn__title mb-1 ">Готово к продажу</h5>
+																					<h6 class="order-drop-btn__sub-title">(2шт з 3шт)</h6>
+																				</div>
+																				
+																			</button>
+																			<div class="dropdown-menu pb-0 pt-0"
+																				aria-labelledby="dropdownMenuIconButton4">
+																				<a class="dropdown-item order-drop-item d-flex" href="#">
+																					<div class="order-drop-item__column">
+																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
+																						</h5>
+																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
+																					</div>
+																					<p class="order-drop-item__status status-active mb-0">В наявності</p>
+																				</a>
+																				<div class="dropdown-divider"></div>
+																				<a class="dropdown-item order-drop-item d-flex" href="#">
+																					<div class="order-drop-item__column">
+																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
+																						</h5>
+																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
+																					</div>
+																					<p class="order-drop-item__status status-disable mb-0">Закінчилось</p>
+																				</a>
+																				<div class="dropdown-divider"></div>
+																				<a class="dropdown-item order-drop-item d-flex" href="#">
+																					<div class="order-drop-item__column">
+																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
+																						</h5>
+																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
+																					</div>
+																					<p class="order-drop-item__status staus-active status-shortage mb-0">Недостача
+																					</p>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
 																</td>
 															</tr>
 														</tbody>
@@ -492,29 +540,18 @@
 	<!-- container-scroller -->
 	<!-- plugins:js -->
 	<script src="../../../../vendors/js/vendor.bundle.base.js"></script>
-	<!-- endinject -->
-	<!-- Plugin js for this page-->
 	<script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
 	<script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-	<!-- End plugin js for this page-->
-	<!-- inject:js -->
 	<script src="../../../../js/off-canvas.js"></script>
 	<script src="../../../../js/hoverable-collapse.js"></script>
 	<script src="../../../../js/template.js"></script>
 	<script src="../../../../js/settings.js"></script>
 	<script src="../../../../js/todolist.js"></script>
-	<!-- endinject -->
-	<!-- Custom js for this page-->
 	<script src="../../../../js/data-table.js"></script>
 	<script src="../../../../js/js-grid.js"></script>
-	<script src="../../../../vendors/js/vendor.bundle.base.js"></script>
-	<!-- endinject -->
-	<!-- Plugin js for this page -->
 	<script src="../../../../vendors/jsgrid/jsgrid.min.js"></script>
 	<script src="../../../../js/js-grid.js"></script>
 	<script src="../../../../js/db.js"></script>
-	<!-- End custom js for this page-->
-	<!-- End custom js for this page-->
 </body>
 
 </html>
