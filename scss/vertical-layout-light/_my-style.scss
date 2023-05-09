@@ -348,17 +348,61 @@ div.dataTables_wrapper div.dataTables_length select {
 	line-height: 1.2;
 	letter-spacing: 0em;
 	text-align: left;
-	white-space:normal !important;
+	white-space: normal !important;
 	&__text {
 		max-width: 92px;
 	}
 }
-.order-item-buttons{
+.order-item-buttons {
 	display: flex;
-	&__btn{
-		&:first-child{
-			border-radius:4px 0 0 4px;
+	padding-right: 0 !important;
+	&__btn {
+		&:first-child {
+			border-radius: 4px 0 0 4px;
 		}
+	}
+}
+.form-check-label{
+	cursor:pointer;
+	transition: 0.6s;
+	&:hover{
+		color:#248AFD;
+	}
+}
+.form-check .form-check-label input[type="checkbox"] + .input-helper::before{
+	border-color:#DCDCDC;
+}
+.orders-delivery-inner {
+	&__name {
+		font-family: Open Sans;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 19px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #000000;
+	}
+	&__text {
+		font-family: Open Sans;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	&__text-end {
+		text-align: right;
+	}
+	.table th, .jsgrid .jsgrid-table th, .table td, .jsgrid .jsgrid-table td{
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.activated-state{
+		color:  #71C016;
+	}
+	padding-bottom: 50px !important;
+	.disable-state{
+		color:#248AFD;
 	}
 }
 .card-body-inner {
