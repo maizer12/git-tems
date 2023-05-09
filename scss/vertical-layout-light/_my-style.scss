@@ -348,14 +348,17 @@ div.dataTables_wrapper div.dataTables_length select {
 	line-height: 1.2;
 	letter-spacing: 0em;
 	text-align: left;
-	
+	white-space:normal !important;
 	&__text {
-		inline-size: 150px;
-		max-width: 150px;
-		color: red;
-		border: red 1px solid;
-		display: block;
-		word-break: break-all;
+		max-width: 92px;
+	}
+}
+.order-item-buttons{
+	display: flex;
+	&__btn{
+		&:first-child{
+			border-radius:4px 0 0 4px;
+		}
 	}
 }
 .card-body-inner {

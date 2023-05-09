@@ -2,24 +2,21 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Замовлення</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
 	<link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
-	<!-- endinject -->
-	<!-- Plugin css for this page -->
 	<link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
 	<link rel="stylesheet" href="../../../../css/vertical-layout-light/style.css">
 	<link rel="shortcut icon" href="../../../../images/favicon.png" />
 	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid.min.css">
 	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid-theme.min.css">
 	<link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
-
 </head>
 
 <body class="sidebar-dark">
@@ -438,11 +435,13 @@
 																		</label>
 																	</div>
 																</td>
-																<td > <p>В дорозі </p> </td>
+																<td>
+																	<p>В дорозі </p>
+																</td>
 																<td class='orders-item d-flex justify-content-between'>
-																	<div class="orders-item__inner">
+																	<div class="orders-item__inner m-0">
 																		<p class="orders-item__text mb-0">Сайт</p>
-																		<h5 class="orders-item__num fw-bold">#1232</h5>
+																		<h5 class="orders-item__num fw-bold m-0">#1232</h5>
 																	</div>
 																	<p class="orders-item__num mb-0 fw-bold">2 дні</p>
 																</td>
@@ -507,10 +506,13 @@
 																</td>
 																<td>
 																	<div class="dropdown orders-delivery">
-																		<button type="button" class=" dropdown-toggle show" id="dropdownMenuIconButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																		<button type="button" class=" dropdown-toggle show" id="dropdownMenuIconButton7"
+																			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 																			Нова пошта
 																		</button>
-																		<div class="dropdown-menu show" aria-labelledby="dropdownMenuIconButton7" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 50px, 0px);" data-popper-placement="bottom-start">
+																		<div class="dropdown-menu show" aria-labelledby="dropdownMenuIconButton7"
+																			style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 50px, 0px);"
+																			data-popper-placement="bottom-start">
 																			<h6 class="dropdown-header">Settings</h6>
 																			<a class="dropdown-item" href="#">Action</a>
 																			<a class="dropdown-item" href="#">Another action</a>
@@ -524,10 +526,20 @@
 																	<p class='order-inform-pay'>Прізвище Ім’я</p>
 																</td>
 																<td class='order-item-tags'>
-																	<p class='order-item-tags__text'>
+																	<p class='order-item-tags__text m-0'>
 																		Тег1, Тег2,Тег 3
-																	  Тег1, Тег2,Тег 3
 																	</p>
+																</td>
+																<td class='order-item-buttons mb-0'>
+																	<button class='order-item-buttons__btn mb-0 btn bg-black btn-lg p-2 '>
+																		<i class="icon-printer"></i>
+																	</button>
+																	<button class='order-item-buttons__btn mb-0 btn btn-primary btn-lg rounded-0 p-2'>
+																		<i class="icon-docs"></i>
+																	</button>
+																	<button class='order-item-buttons__btn mb-0 btn btn-warning p-2 rounded-0'>
+																		<i class="mdi mdi-lead-pencil"></i>
+																	</button>
 																</td>
 															</tr>
 														</tbody>
