@@ -417,31 +417,34 @@
 																<th class="sortStyle ">Сума</th>
 																<th class="sortStyle ">Дата створення</th>
 																<th class="sortStyle ">Товари</th>
-																<th class="sortStyle ">Інформація про оплату</th>
-																<th class="sortStyle ">Інформація
+																<th class="sortStyle ">
+																	Інформація про <br> оплату
+																</th>
+																<th class="sortStyle ">Інформація <br>
 																	про доставку</th>
-																<th class="sortStyle ">Провідний менеджер</th>
+																<th class="sortStyle ">Провідний <br> менеджер</th>
+																<th class="sortStyle">Теги <br> замовлення</th>
 																<th class="sortStyle ">Управління</th>
 															</tr>
 														</thead>
 														<tbody>
 															<tr class='orders-items'>
 																<td>
-																	<div class="form-check">
-																		<label class="form-check-label">
+																	<div class="form-check m-0">
+																		<label class="form-check-label ">
 																			<input type="checkbox" class="form-check-input">
 																			2
 																			<i class="input-helper"></i>
 																		</label>
 																	</div>
 																</td>
-																<td>В дорозі </td>
+																<td > <p>В дорозі </p> </td>
 																<td class='orders-item d-flex justify-content-between'>
 																	<div class="orders-item__inner">
 																		<p class="orders-item__text mb-0">Сайт</p>
 																		<h5 class="orders-item__num fw-bold">#1232</h5>
 																	</div>
-																	<p class="orders-item__num fw-bold">2 дні</p>
+																	<p class="orders-item__num mb-0 fw-bold">2 дні</p>
 																</td>
 																<td class='orders-item-client'>
 																	<p class="orders-item-client__name mb-1">Прізвище Ім’я</p>
@@ -457,7 +460,7 @@
 																</td>
 																<td>
 																	<div class="template-demo d-flex justify-content-between flex-wrap">
-																		<div class="dropdown  dropdown-orders">
+																		<div class="dropdown  dropdown-orders m-0">
 																			<button type="button" class="btn p-2 btn-success d-flex dropdown-toggle"
 																				id="dropdownMenuIconButton4" data-bs-toggle="dropdown" aria-haspopup="true"
 																				aria-expanded="false">
@@ -465,10 +468,9 @@
 																					<h5 class="order-drop-btn__title mb-1 ">Готово к продажу</h5>
 																					<h6 class="order-drop-btn__sub-title">(2шт з 3шт)</h6>
 																				</div>
-																				
+
 																			</button>
-																			<div class="dropdown-menu pb-0 pt-0"
-																				aria-labelledby="dropdownMenuIconButton4">
+																			<div class="dropdown-menu pb-0 pt-0" aria-labelledby="dropdownMenuIconButton4">
 																				<a class="dropdown-item order-drop-item d-flex" href="#">
 																					<div class="order-drop-item__column">
 																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
@@ -477,7 +479,7 @@
 																					</div>
 																					<p class="order-drop-item__status status-active mb-0">В наявності</p>
 																				</a>
-																				<div class="dropdown-divider"></div>
+																				<div class="dropdown-divider m-0"></div>
 																				<a class="dropdown-item order-drop-item d-flex" href="#">
 																					<div class="order-drop-item__column">
 																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
@@ -486,7 +488,7 @@
 																					</div>
 																					<p class="order-drop-item__status status-disable mb-0">Закінчилось</p>
 																				</a>
-																				<div class="dropdown-divider"></div>
+																				<div class="dropdown-divider m-0"></div>
 																				<a class="dropdown-item order-drop-item d-flex" href="#">
 																					<div class="order-drop-item__column">
 																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
@@ -499,6 +501,33 @@
 																			</div>
 																		</div>
 																	</div>
+																</td>
+																<td>
+																	<p class='order-inform-pay'>При отриманні</p>
+																</td>
+																<td>
+																	<div class="dropdown orders-delivery">
+																		<button type="button" class=" dropdown-toggle show" id="dropdownMenuIconButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																			Нова пошта
+																		</button>
+																		<div class="dropdown-menu show" aria-labelledby="dropdownMenuIconButton7" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 50px, 0px);" data-popper-placement="bottom-start">
+																			<h6 class="dropdown-header">Settings</h6>
+																			<a class="dropdown-item" href="#">Action</a>
+																			<a class="dropdown-item" href="#">Another action</a>
+																			<a class="dropdown-item" href="#">Something else here</a>
+																			<div class="dropdown-divider"></div>
+																			<a class="dropdown-item" href="#">Separated link</a>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<p class='order-inform-pay'>Прізвище Ім’я</p>
+																</td>
+																<td class='order-item-tags'>
+																	<p class='order-item-tags__text'>
+																		Тег1, Тег2,Тег 3
+																	  Тег1, Тег2,Тег 3
+																	</p>
 																</td>
 															</tr>
 														</tbody>

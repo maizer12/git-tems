@@ -31821,6 +31821,61 @@ div.dataTables_wrapper div.dataTables_length select {
   text-align: left;
 }
 
+.order-inform-pay {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.orders-delivery button {
+  border: 0;
+  background: none;
+  display: flex;
+  transition: 0.3s;
+}
+
+.orders-delivery button::after {
+  background-color: #248afd;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 14px;
+  font-size: 8px !important;
+  min-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.orders-delivery button:hover {
+  color: #248afd;
+}
+
+.orders-delivery .show::after {
+  transform: rotate(180deg);
+}
+
+.order-item-tags {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.order-item-tags__text {
+  inline-size: 150px;
+  max-width: 150px;
+  color: red;
+  border: red 1px solid;
+  display: block;
+  word-break: break-all;
+}
+
 .card-body-inner {
   margin-top: 12px;
   display: flex;
