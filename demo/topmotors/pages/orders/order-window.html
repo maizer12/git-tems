@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,6 +18,7 @@
 	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid-theme.min.css">
 	<link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
 </head>
+
 <body class="sidebar-dark">
 	<div class="container-scroller">
 		<!-- partial:../../partials/_navbar.html -->
@@ -318,8 +320,8 @@
 							<span class="menu-title">Склади</span>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./pages/orders/orders.html">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
 							<i class="ti-shopping-cart menu-icon"></i>
 							<span class="menu-title">Замовлення</span>
 							<i class="menu-arrow"></i>
@@ -333,6 +335,13 @@
 							<i class="menu-arrow"></i>
 						</a>
 					</li>
+					<li class="nav-item">
+            <a class="nav-link" href="../kits/kits.html" >
+              <i class="ti-view-list menu-icon"></i>
+              <span class="menu-title">Комплекти</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
 					<li class="nav-item">
 						<a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-controls="form-elements">
 							<i class="ti-clipboard menu-icon"></i>
@@ -371,351 +380,11 @@
 			<div class="main-panel">
 				<div class="content-wrapper">
 					<div class="card">
-						<div class="card-body">
-							<div class="df-it-sp users-header">
-								<div class="users-header__item">
-									<h4 class="card-title mt-2 mb-3">Замовлення</h4>
-									<div class="dataTables_length" id="order-listing_length">
-										<label class='df-it-sp'><span class='d-block mar-r'>Показувати</span>
-											<select name="order-listing_length" aria-controls="order-listing"
-												class="custom-select custom-select-sm form-control">
-												<option value="5">5</option>
-												<option value="10">10</option>
-												<option value="15">15</option>
-												<option value="-1">All</option>
-											</select>
-											<span class='mar-n d-block'>entries</span> </label>
-									</div>
-								</div>
-								<div class="d-flex col-gap-df">
-									<a href='./form-create.html' type="button" class=" btn btn-primary btn-lg p-2 "><i
-											class="icon-plus"></i></a>
-									<a href='./form-create.html' type="button" class=" btn bg-black btn-lg p-2">
-										<i class="icon-printer"></i></a>
-									<a href='./form-create.html' type="button" class=" btn bg-new btn-lg p-2"><i
-											class="icon-trash"></i></a>
-								</div>
-							</div>
-							<div class="row storage-table mt-3">
-								<div class="col-12">
-									<div class="table-responsive ">
-										<table id="order-listing" class="table">
-											<tr>
-												<td class='table-pa'>
-													<table class="table">
-														<thead>
-															<tr class='border-opacity order-header'>
-																<th class='sortStyle '>Order ID</th>
-																<th class="sortStyle ">Статус</th>
-																<th class="sortStyle ">Джерело замовлення</th>
-																<th class="sortStyle ">Клієнт</th>
-																<th class="sortStyle ">Сума</th>
-																<th class="sortStyle ">Дата створення</th>
-																<th class="sortStyle ">Товари</th>
-																<th class="sortStyle ">
-																	Інформація про <br> оплату
-																</th>
-																<th class="sortStyle ">Інформація <br>
-																	про доставку</th>
-																<th class="sortStyle ">Провідний <br> менеджер</th>
-																<th class="sortStyle ">Теги <br> замовлення</th>
-																<th class="sortStyle p-0 text-end">Управління</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr class='orders-items'>
-																<td>
-																	<div class="form-check m-0">
-																		<label class="form-check-label ">
-																			<input type="checkbox" class="form-check-input">
-																			2
-																			<i class="input-helper"></i>
-																		</label>
-																	</div>
-																</td>
-																<td>
-																	В дорозі 
-																</td>
-																<td class='orders-item d-flex justify-content-between'>
-																	<div class="orders-item__inner m-0">
-																		<p class="orders-item__text mb-0">Сайт</p>
-																		<h5 class="orders-item__num fw-bold m-0">#1232</h5>
-																	</div>
-																	<p class="orders-item__num mb-0 fw-bold">2 дні</p>
-																</td>
-																<td class='orders-item-client'>
-																	<p class="orders-item-client__name mb-1">Прізвище Ім’я</p>
-																	<p class="orders-item-client__text mb-0">Телефон:</p>
-																	<p class="orders-item-client__num"> +380 68 697-8088</p>
-																</td>
-																<td class='orders-item-sum'>
-																	250 UAH
-																</td>
-																<td class="orders-item-date">
-																	<p class="orders-item-date__item mb-0">15.04.2023</p>
-																	<p class="orders-item-date__item">10:30:12</p>
-																</td>
-																<td>
-																	<div class="template-demo d-flex justify-content-between flex-wrap">
-																		<div class="dropdown  dropdown-orders m-0">
-																			<button type="button" class="btn p-2 btn-success d-flex dropdown-toggle"
-																				id="dropdownMenuIconButton4" data-bs-toggle="dropdown" aria-haspopup="true"
-																				aria-expanded="false">
-																				<div class="order-drop-btn__column">
-																					<h5 class="order-drop-btn__title mb-1 ">Готово к продажу</h5>
-																					<h6 class="order-drop-btn__sub-title">(2шт з 3шт)</h6>
-																				</div>
-
-																			</button>
-																			<div class="dropdown-menu pb-0 pt-0" aria-labelledby="dropdownMenuIconButton4">
-																				<a class="dropdown-item order-drop-item d-flex" href="#">
-																					<div class="order-drop-item__column">
-																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
-																						</h5>
-																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
-																					</div>
-																					<p class="order-drop-item__status status-active mb-0">В наявності</p>
-																				</a>
-																				<div class="dropdown-divider m-0"></div>
-																				<a class="dropdown-item order-drop-item d-flex" href="#">
-																					<div class="order-drop-item__column">
-																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
-																						</h5>
-																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
-																					</div>
-																					<p class="order-drop-item__status status-disable mb-0">Закінчилось</p>
-																				</a>
-																				<div class="dropdown-divider m-0"></div>
-																				<a class="dropdown-item order-drop-item d-flex" href="#">
-																					<div class="order-drop-item__column">
-																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
-																						</h5>
-																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
-																					</div>
-																					<p class="order-drop-item__status staus-active status-shortage mb-0">Недостача
-																					</p>
-																				</a>
-																			</div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<p class='order-inform-pay'>При отриманні</p>
-																</td>
-																<td>
-																	<div class="dropdown orders-delivery">
-																		<button type="button" class=" dropdown-toggle" id="dropdownMenuIconButton7"
-																			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-																			Нова пошта
-																		</button>
-																		<div class="dropdown-menu p-0 orders-delivery-inner"
-																			aria-labelledby="dropdownMenuIconButton7"
-																			style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 50px, 0px);"
-																			data-popper-placement="bottom-start">
-																			<table class="table">
-																				<thead>
-																					<tr>
-																						<th class='orders-delivery-inner__name'>ТТН</th>
-																						<th class='orders-delivery-inner__name'>Статус</th>
-																						<th class='orders-delivery-inner__name'>На пошті</th>
-																					</tr>
-																				</thead>
-																				<tbody>
-																					<tr>
-																						<td class='orders-delivery-inner__text'>20450696004233</td>
-																						<td class='orders-delivery-inner__text activated-state'>
-																							У відділенн</td>
-																						<td class='orders-delivery-inner__text  
-																						 orders-delivery-inner__text-end'>2 дні</td>
-																					</tr>
-																					<tr>
-																						<td class='orders-delivery-inner__text'>20450696004233</td>
-																						<td class='orders-delivery-inner__text disable-state '>
-																							Створена ТТН</td>
-																						<td class='orders-delivery-inner__text  
-																						orders-delivery-inner__text-end'>2 дні</td>
-																					</tr>
-																				</tbody>
-																			</table>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<p class='order-inform-pay'>Прізвище Ім’я</p>
-																</td>
-																<td class='order-item-tags'>
-																	<p class='order-item-tags__text m-0'>
-																		Тег1, Тег2,Тег 3
-																	</p>
-																</td>
-																<td class='order-item-buttons mb-0'>
-																	<button class='order-item-buttons__btn mb-0 btn bg-black btn-lg p-2 '>
-																		<i class="icon-printer"></i>
-																	</button>
-																	<button class='order-item-buttons__btn mb-0 btn btn-primary btn-lg rounded-0 p-2'>
-																		<i class="icon-docs"></i>
-																	</button>
-																	<button class='order-item-buttons__btn mb-0 btn btn-warning p-2 rounded-0'>
-																		<i class="mdi mdi-lead-pencil"></i>
-																	</button>
-																</td>
-															</tr>
-															<tr class='orders-items'>
-																<td>
-																	<div class="form-check m-0">
-																		<label class="form-check-label ">
-																			<input type="checkbox" class="form-check-input">
-																			2
-																			<i class="input-helper"></i>
-																		</label>
-																	</div>
-																</td>
-																<td>
-																	В дорозі 
-																</td>
-																<td class='orders-item d-flex justify-content-between'>
-																	<div class="orders-item__inner m-0">
-																		<p class="orders-item__text mb-0">Сайт</p>
-																		<h5 class="orders-item__num fw-bold m-0">#1232</h5>
-																	</div>
-																	<p class="orders-item__num mb-0 fw-bold">2 дні</p>
-																</td>
-																<td class='orders-item-client'>
-																	<p class="orders-item-client__name mb-1">Прізвище Ім’я</p>
-																	<p class="orders-item-client__text mb-0">Телефон:</p>
-																	<p class="orders-item-client__num"> +380 68 697-8088</p>
-																</td>
-																<td class='orders-item-sum'>
-																	250 UAH
-																</td>
-																<td class="orders-item-date">
-																	<p class="orders-item-date__item mb-0">15.04.2023</p>
-																	<p class="orders-item-date__item">10:30:12</p>
-																</td>
-																<td>
-																	<div class="template-demo d-flex justify-content-between flex-wrap">
-																		<div class="dropdown  dropdown-orders m-0">
-																			<button type="button" class="btn p-2 btn-success d-flex dropdown-toggle"
-																				id="dropdownMenuIconButton4" data-bs-toggle="dropdown" aria-haspopup="true"
-																				aria-expanded="false">
-																				<div class="order-drop-btn__column">
-																					<h5 class="order-drop-btn__title mb-1 ">Готово к продажу</h5>
-																					<h6 class="order-drop-btn__sub-title">(2шт з 3шт)</h6>
-																				</div>
-
-																			</button>
-																			<div class="dropdown-menu pb-0 pt-0" aria-labelledby="dropdownMenuIconButton4">
-																				<a class="dropdown-item order-drop-item d-flex" href="#">
-																					<div class="order-drop-item__column">
-																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
-																						</h5>
-																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
-																					</div>
-																					<p class="order-drop-item__status status-active mb-0">В наявності</p>
-																				</a>
-																				<div class="dropdown-divider m-0"></div>
-																				<a class="dropdown-item order-drop-item d-flex" href="#">
-																					<div class="order-drop-item__column">
-																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
-																						</h5>
-																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
-																					</div>
-																					<p class="order-drop-item__status status-disable mb-0">Закінчилось</p>
-																				</a>
-																				<div class="dropdown-divider m-0"></div>
-																				<a class="dropdown-item order-drop-item d-flex" href="#">
-																					<div class="order-drop-item__column">
-																						<h5 class="order-drop-item__name mb-1">Фільтр масляний daewoo lanos x 2шт
-																						</h5>
-																						<p class="order-drop-item__text mb-0">125 грн x 2шт</p>
-																					</div>
-																					<p class="order-drop-item__status staus-active status-shortage mb-0">Недостача
-																					</p>
-																				</a>
-																			</div>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<p class='order-inform-pay'>При отриманні</p>
-																</td>
-																<td>
-																	<div class="dropdown orders-delivery">
-																		<button type="button" class=" dropdown-toggle" id="dropdownMenuIconButton7"
-																			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-																			Нова пошта
-																		</button>
-																		<div class="dropdown-menu p-0 orders-delivery-inner"
-																			aria-labelledby="dropdownMenuIconButton7"
-																			style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 50px, 0px);"
-																			data-popper-placement="bottom-start">
-																			<table class="table">
-																				<thead>
-																					<tr>
-																						<th class='orders-delivery-inner__name'>ТТН</th>
-																						<th class='orders-delivery-inner__name'>Статус</th>
-																						<th class='orders-delivery-inner__name'>На пошті</th>
-																					</tr>
-																				</thead>
-																				<tbody>
-																					<tr>
-																						<td class='orders-delivery-inner__text'>20450696004233</td>
-																						<td class='orders-delivery-inner__text activated-state'>
-																							У відділенн</td>
-																						<td class='orders-delivery-inner__text  
-																						 orders-delivery-inner__text-end'>2 дні</td>
-																					</tr>
-																					<tr>
-																						<td class='orders-delivery-inner__text'>20450696004233</td>
-																						<td class='orders-delivery-inner__text disable-state '>
-																							Створена ТТН</td>
-																						<td class='orders-delivery-inner__text  
-																						orders-delivery-inner__text-end'>2 дні</td>
-																					</tr>
-																				</tbody>
-																			</table>
-																		</div>
-																	</div>
-																</td>
-																<td>
-																	<p class='order-inform-pay'>Прізвище Ім’я</p>
-																</td>
-																<td class='order-item-tags'>
-																	<p class='order-item-tags__text m-0'>
-																		Тег1, Тег2,Тег 3
-																	</p>
-																</td>
-																<td class='order-item-buttons mb-0'>
-																	<button class='order-item-buttons__btn mb-0 btn bg-black btn-lg p-2 '>
-																		<i class="icon-printer"></i>
-																	</button>
-																	<button class='order-item-buttons__btn mb-0 btn btn-primary btn-lg rounded-0 p-2'>
-																		<i class="icon-docs"></i>
-																	</button>
-																	<button class='order-item-buttons__btn mb-0 btn btn-warning p-2 rounded-0'>
-																		<i class="mdi mdi-lead-pencil"></i>
-																	</button>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</td>
-											</tr>
-
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="pagination-body-footer d-flex">
-									<p class="pagination-body-footer__text">Показувати 1 по 10 з 10 позицій</p>
-									<ul class="pagination flex-wrap">
-										<li class="page-item"><button class="page-link">Попередня</button></li>
-										<li class="page-item active"><a class="page-link" href="#">1</a></li>
-										<li class="page-item"><a class="page-link" href="#">2</a></li>
-										<li class="page-item"><a class="page-link" href="#">3</a></li>
-										<li class="page-item"><a class="page-link" href="#">4</a></li>
-										<li class="page-item"><button class="page-link" href="#">Наступна</button></li>
-									</ul>
+						<div class="card-body window-order">
+							<div class="window-order__header">
+								<div class="window-order__header-left">
+									<h3 class="window-order__title">Заказ № 1232</h3>
+									.window-order__select
 								</div>
 							</div>
 						</div>
