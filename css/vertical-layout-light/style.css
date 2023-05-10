@@ -32401,6 +32401,42 @@ input::-webkit-inner-spin-button {
   color: #ff4747;
 }
 
+.order-column-footer {
+  margin-top: 21px;
+  padding: 31px 26px;
+  display: flex;
+  justify-content: space-between;
+  border: #EDEDED 1px solid;
+}
+
+.order-column-footer__image {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.order-column-footer__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-column-footer__user {
+  display: flex;
+  column-gap: 18px;
+}
+
+.order-column-footer__state {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.order-column-footer__buttons {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   .min-wid-cl {
     width: auto;
