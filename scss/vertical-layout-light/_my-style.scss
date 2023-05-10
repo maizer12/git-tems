@@ -524,6 +524,10 @@ input::-webkit-inner-spin-button {
 		display: flex;
 		justify-content: space-between;
 	}
+	&__columns{
+		display: flex;
+		column-gap:18px;
+	}
 	&__header-left,
 	&__header-right {
 		display: flex;
@@ -845,6 +849,7 @@ input::-webkit-inner-spin-button {
 		align-items:center;
 	} 
 }
+
 @media (max-width: 1200px) {
 	.min-wid-cl {
 		width: auto;

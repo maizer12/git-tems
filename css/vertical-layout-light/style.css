@@ -32077,6 +32077,11 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
+.window-order__columns {
+  display: flex;
+  column-gap: 18px;
+}
+
 .window-order__header-left, .window-order__header-right {
   display: flex;
   align-items: center;
