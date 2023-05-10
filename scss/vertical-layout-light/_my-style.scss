@@ -524,13 +524,14 @@ input::-webkit-inner-spin-button {
 		display: flex;
 		justify-content: space-between;
 	}
-	&__header-left, &__header-right {
+	&__header-left,
+	&__header-right {
 		display: flex;
 		align-items: center;
 		column-gap: 32px;
 	}
-	&__header-right{
-		column-gap:72px
+	&__header-right {
+		column-gap: 72px;
 	}
 	&__title {
 		font-family: Roboto;
@@ -552,13 +553,17 @@ input::-webkit-inner-spin-button {
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 1.2;
-		color:#545454;
+		color: #545454;
 		letter-spacing: 0em;
 		text-align: left;
-		&_color{
-			color:#000000;
+		&_color {
+			color: #000000;
 			font-size: 12px;
 		}
+	}
+	&__columns {
+		display: flex;
+		padding-top: 44px;
 	}
 }
 
@@ -610,7 +615,7 @@ input::-webkit-inner-spin-button {
 		color: #555555;
 		letter-spacing: 0em;
 		text-align: left;
-		&_fs{
+		&_fs {
 			font-size: 12px;
 		}
 	}
@@ -622,6 +627,92 @@ input::-webkit-inner-spin-button {
 		padding-right: 6px;
 		padding-left: 10px;
 		width: 100%;
+	}
+}
+.order-column {
+	max-width: 502px;
+	width: 100%;
+	&__desc {
+		justify-content: space-between;
+	}
+	&__text {
+		font-family: Open Sans;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		display: flex;
+		column-gap: 8px;
+		text-align: left;
+		color: #000000;
+		i {
+			color: #248afd;
+			font-size: 13px;
+		}
+	}
+	&__column {
+		width: 100%;
+		border: #ededed 1px solid;
+		padding: 23px 13px 15px;
+	}
+	&__inputs {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 10px;
+	}
+	&__contact{
+		display: flex;
+		align-items:center;
+		column-gap:28px;
+	}
+}
+.name-form-order {
+	font-family: Open Sans;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #555555;
+	margin-bottom: 7px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.name-form-input {
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #212529;
+	padding: 16px 6px;
+	border: 1px solid #ededed;
+	display: block;
+	min-width: 215px;
+	cursor: default;
+	&::placeholder {
+		color: #212529;
+	}
+}
+.link-form-order {
+	color: #000000;
+	text-decoration: none;
+	font-family: Open Sans;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.order-tel {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+	&__btn {
+		background: none;
+		border: none;
+		color: #248afd;
+		margin-top: 6px;
+		font-size: 19px;
 	}
 }
 @media (max-width: 1200px) {
