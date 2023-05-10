@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
 	<link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
 	<link rel="stylesheet" href="../../../../css/vertical-layout-light/style.css">
+	<link rel="stylesheet" href="../../../../vendors/font-awesome/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="../../../../images/favicon.png" />
 	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid.min.css">
 	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid-theme.min.css">
@@ -309,7 +310,7 @@
 			<nav class="sidebar sidebar-offcanvas" id="sidebar">
 				<ul class="nav">
 					<li class="nav-item">
-						<a class="nav-link" href="./index.html">
+						<a class="nav-link" href="../../index.html">
 							<i class="ti-home menu-icon"></i>
 							<span class="menu-title">Головна</span>
 						</a>
@@ -336,12 +337,12 @@
 						</a>
 					</li>
 					<li class="nav-item">
-            <a class="nav-link" href="../kits/kits.html" >
-              <i class="ti-view-list menu-icon"></i>
-              <span class="menu-title">Комплекти</span>
-              <i class="menu-arrow"></i>
-            </a>
-          </li>
+						<a class="nav-link" href="../kits/kits.html">
+							<i class="ti-view-list menu-icon"></i>
+							<span class="menu-title">Комплекти</span>
+							<i class="menu-arrow"></i>
+						</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-controls="form-elements">
 							<i class="ti-clipboard menu-icon"></i>
@@ -383,8 +384,62 @@
 						<div class="card-body window-order">
 							<div class="window-order__header">
 								<div class="window-order__header-left">
-									<h3 class="window-order__title">Заказ № 1232</h3>
-									.window-order__select
+									<h3 class="window-order__title mb-0">Заказ № 1232</h3>
+									<label class="window-order-select">
+										<div class='window-order-select__color' style='background-color:#71C016;'></div>
+										<select name="" id="" class="window-order-select__inner">
+											<option value="1"> Відправлено</option>
+											<option value="2"> Отримано</option>
+											<option value="3"> У дорозі</option>
+										</select>
+										<i class="icon-arrow-down window-order-select__arrow"></i>
+									</label>
+									<div class="min-select">
+										<p class="min-select__name mb-1 ">Джерело замовлення</p>
+										<label class="window-order-select ">
+											<select name="" id="" class="window-order-select__inner">
+												<option value="1"> Сайт</option>
+												<option value="2"> Сайт</option>
+												<option value="3"> Сайт</option>
+											</select>
+											<i class="icon-arrow-down window-order-select__arrow"></i>
+										</label>
+									</div>
+									<div class="window-order__date">
+										<p class="min-select__name mb-2 ">Дата створення</p>
+										<h5 class="window-order__date-text mb-1">15.04.2023 10:30:12</h5>
+									</div>
+									<div class="min-select">
+										<p class="min-select__name mb-1 ">Тип продажу</p>
+										<label class="window-order-select ">
+											<select name="" id="" class="window-order-select__inner">
+												<option value="1"> Пряма продажа</option>
+												<option value="2"> Пряма продажа</option>
+												<option value="3"> Пряма продажа</option>
+											</select>
+											<i class="icon-arrow-down window-order-select__arrow"></i>
+										</label>
+									</div>
+								</div>
+								<div class="window-order__header-right">
+									<div class="window-order__date">
+										<p class="min-select__name min-select__name_fs  mb-2 ">Дата відправки:</p>
+										<h5 class="window-order__date-text window-order__date-text_color mb-1">15.04.2023 10:30:12</h5>
+									</div>
+									<div class="window-order__buttons d-flex col-gap-df">
+										<a href="./form-create.html" type="button" class=" btn bg-black btn-lg p-2">
+											<i class="icon-printer"></i>
+										</a>
+										<a href="./form-create.html" type="button" class=" btn btn-primary btn-lg p-2 ">
+											<i class="fa fa-save"></i>
+										</a>
+										<a href="./form-create.html" type="button" class=" btn btn-success btn-lg p-2 ">
+											<i class="icon-check"></i>
+										</a>
+										
+										<a href="./form-create.html" type="button" class=" btn bg-new btn-lg p-2"><i class="icon-trash"></i>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -116,6 +116,7 @@
 /* === Import template variables === */
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @-moz-keyframes flash {
   0% {
     opacity: 1;
@@ -31891,11 +31892,11 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 .form-check-label:hover {
-  color: #248AFD;
+  color: #248afd;
 }
 
-.form-check .form-check-label input[type="checkbox"] + .input-helper::before {
-  border-color: #DCDCDC;
+.form-check .form-check-label input[type='checkbox'] + .input-helper::before {
+  border-color: #dcdcdc;
 }
 
 .orders-delivery-inner {
@@ -31925,17 +31926,22 @@ div.dataTables_wrapper div.dataTables_length select {
   text-align: right;
 }
 
-.orders-delivery-inner .table th, .orders-delivery-inner .jsgrid .jsgrid-table th, .jsgrid .orders-delivery-inner .jsgrid-table th, .orders-delivery-inner .jsgrid .jsgrid-table th, .orders-delivery-inner .table td, .orders-delivery-inner .jsgrid .jsgrid-table td, .jsgrid .orders-delivery-inner .jsgrid-table td, .orders-delivery-inner .jsgrid .jsgrid-table td {
+.orders-delivery-inner .table th, .orders-delivery-inner .jsgrid .jsgrid-table th, .jsgrid .orders-delivery-inner .jsgrid-table th,
+.orders-delivery-inner .jsgrid .jsgrid-table th,
+.orders-delivery-inner .table td,
+.orders-delivery-inner .jsgrid .jsgrid-table td,
+.jsgrid .orders-delivery-inner .jsgrid-table td,
+.orders-delivery-inner .jsgrid .jsgrid-table td {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .orders-delivery-inner .activated-state {
-  color: #71C016;
+  color: #71c016;
 }
 
 .orders-delivery-inner .disable-state {
-  color: #248AFD;
+  color: #248afd;
 }
 
 .card-body-inner {
@@ -31999,7 +32005,7 @@ div.dataTables_wrapper div.dataTables_length select {
   background: none;
   border: 0;
   color: #666666;
-  border-left: #CCCCCC solid 2px;
+  border-left: #cccccc solid 2px;
 }
 
 .pagination-body-footer {
@@ -32064,6 +32070,121 @@ input::-webkit-inner-spin-button {
   display: inline;
   width: fit-content;
   padding: 2px 17px;
+}
+
+.window-order__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.window-order__header-left, .window-order__header-right {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.window-order__header-right {
+  column-gap: 72px;
+}
+
+.window-order__title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #060606;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.window-order__date {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.window-order__date-text {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #545454;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.window-order__date-text_color {
+  color: #000000;
+  font-size: 12px;
+}
+
+.window-order-select {
+  position: relative;
+}
+
+.window-order-select__inner {
+  cursor: pointer;
+  border-color: #ededed;
+  padding: 14px 7px;
+  height: 100%;
+  border-radius: 3px;
+  padding-left: 22px;
+  padding-right: 30px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.window-order-select__color {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  top: 50%;
+  left: 7px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.window-order-select__arrow {
+  position: absolute;
+  right: 7px;
+  color: #494949;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.min-select__name {
+  font-family: Open Sans;
+  font-size: 10px !important;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #555555;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.min-select__name_fs {
+  font-size: 12px;
+}
+
+.min-select .window-order-select {
+  width: 137px;
+}
+
+.min-select .window-order-select__inner {
+  padding: 6px;
+  padding-right: 6px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
