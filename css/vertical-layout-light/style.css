@@ -32291,6 +32291,37 @@ input::-webkit-inner-spin-button {
   font-size: 19px;
 }
 
+.order-column-select {
+  align-items: center;
+  column-gap: 12px;
+}
+
+.order-column-table {
+  --bs-table-accent-bg:#fff;
+  --bs-table-border-color:#fff;
+}
+
+.order-column-table .name-form-order {
+  padding: 0;
+  padding-right: 12px;
+  font-size: 12px !important;
+  padding-bottom: 3px;
+}
+
+.order-column-table .name-form-order_col {
+  color: #000000;
+  padding-bottom: 0;
+}
+
+.window-order-select_big {
+  width: 266px;
+}
+
+.window-order-select_big .window-order-select__inner {
+  padding: 14px 8px;
+  width: 100%;
+}
+
 @media (max-width: 1200px) {
   .min-wid-cl {
     width: auto;
