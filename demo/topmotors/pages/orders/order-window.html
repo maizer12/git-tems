@@ -450,11 +450,11 @@
 											<div class="order-column__desc d-flex">
 												<p class="order-column__text">
 													Авто клієнта: Lanos 1.5 (ЗАЗ)| 2005 рік
-													<i class="icon-pencil"></i>
+													<button class="order-list__btn icon-pencil m-0"></button>
 												</p>
 												<p class="order-column__text">
 													Комментар по авто: Комплектація LUX
-													<i class="icon-pencil"></i>
+													<button class="order-list__btn icon-pencil m-0"></button>
 												</p>
 											</div>
 											<div class="order-column__column">
@@ -593,26 +593,24 @@
 								<div class="column-order">
 									<h4 class="order-column__name mb-2">Інформація про клієнта</h4>
 									<div class="column-order__column">
-										<table class="table order-column-table ">
-											<thead>
-												<tr>
-													<th class="name-form-order fw-normal  ">Загальна:</th>
-													<th class="name-form-order fw-normal  ">Оплачено:</th>
-													<th class="name-form-order fw-normal">Знижка:</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="name-form-order name-form-order_col fw-bold  ">650 UAH</td>
-													<td class="name-form-order name-form-order_col fw-bold  ">150 UAH</td>
-													<td class="name-form-order name-form-order_col d-flex">
-														<p class='mt-1 text-fs mb-0'>Знижка відсутня</p>
-														<button class="order-tel__btn m-0 icon-plus"></button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-										<div class="column-order__items ">
+										<ul class="column-order__table column-order__table-cg p-0 m-0">
+											<li class="table-colim-item">
+												<h5 class="table-colim-item__name name-form-order">Загальна:</h5>
+												<h5 class="table-colim-item__name fw-bold m-0">650 UAH</h5>
+											</li>
+											<li class="table-colim-item">
+												<h5 class="table-colim-item__name name-form-order">Оплачено :</h5>
+												<h5 class="table-colim-item__name fw-bold m-0">150 UAH</h5>
+											</li>
+											<li class="table-colim-item">
+												<h5 class="table-colim-item__name name-form-order">Знижка:</h5>
+												<div class="table-colim-item__inner">
+													<p class="table-colim-item__text name-form-order m-0">Знижка відсутня</p>
+													<button class="order-tel__btn icon-plus"></button>
+												</div>
+											</li>
+										</ul>
+										<div class="column-order__items mt-3">
 											<div class="column-order__item">
 												<div class="order-column-elem__select">
 													<p class="name-form-order mb-2">Створення події:</p>
@@ -650,7 +648,6 @@
 												</li>
 											</ul>
 										</div>
-									
 									</div>
 									<ul class="order-list">
 										<li class="order-list__item">

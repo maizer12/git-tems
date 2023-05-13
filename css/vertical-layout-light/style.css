@@ -32571,6 +32571,10 @@ input::-webkit-inner-spin-button {
   color: #71c016;
 }
 
+.column-order__table-cg {
+  column-gap: 28px;
+}
+
 @media (max-width: 1200px) {
   .min-wid-cl {
     width: auto;
