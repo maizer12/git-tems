@@ -585,32 +585,97 @@
 											</div>
 										</div>
 										<div class="order-column-footer__buttons">
-											<button class="order-column-footer__btn btn-success btn">Додати задачу</button> 
-											<button class="order-column-footer__btn btn-primary btn">Змінити менеджера</button> 
+											<button class="order-column-footer__btn btn-success btn">Додати задачу</button>
+											<button class="order-column-footer__btn btn-primary btn">Змінити менеджера</button>
 										</div>
 									</div>
 								</div>
 								<div class="column-order">
 									<h4 class="order-column__name mb-2">Інформація про клієнта</h4>
 									<div class="column-order__column">
-										<table class="table order-column-table mt-4">
+										<table class="table order-column-table ">
 											<thead>
 												<tr>
 													<th class="name-form-order fw-normal  ">Загальна:</th>
 													<th class="name-form-order fw-normal  ">Оплачено:</th>
-													<th class="name-form-order fw-normal  ">Знижка:</th>
+													<th class="name-form-order fw-normal">Знижка:</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
 													<td class="name-form-order name-form-order_col fw-bold  ">650 UAH</td>
 													<td class="name-form-order name-form-order_col fw-bold  ">150 UAH</td>
-													<td class="name-form-order name-form-order_col ">Знижка відсутня</td>
-													<td class="name-form-order fw-bold name-form-order_col "><button class="order-tel__btn m-0 icon-plus"></button></td>
+													<td class="name-form-order name-form-order_col d-flex">
+														<p class='mt-1 text-fs mb-0'>Знижка відсутня</p>
+														<button class="order-tel__btn m-0 icon-plus"></button>
+													</td>
 												</tr>
 											</tbody>
 										</table>
+										<div class="column-order__items ">
+											<div class="column-order__item">
+												<div class="order-column-elem__select">
+													<p class="name-form-order mb-2">Створення події:</p>
+													<label class="window-order-select window-order-select_wid m-0 window-order-select_big">
+														<select name="" id="" class="window-order-select__inner">
+															<option value="1">Повернути все замовлення</option>
+															<option value="2"> Отримано</option>
+															<option value="3"> У дорозі</option>
+														</select>
+														<i class="icon-arrow-down window-order-select__arrow"></i>
+													</label>
+												</div>
+												<button type="button" class=" btn btn-success btn-lg p-2 mr-3">
+													<i class="icon-check"></i>
+												</button>
+											</div>
+											<ul class="column-order__table p-0 m-0">
+												<li class="table-colim-item">
+													<h5 class="table-colim-item__name name-form-order">Витрати по замовленню:</h5>
+													<div class="table-colim-item__inner">
+														<p class="table-colim-item__text name-form-order m-0">Немає витрат</p>
+														<button class="order-tel__btn icon-plus"></button>
+													</div>
+												</li>
+												<li class="table-colim-item">
+													<h5 class="table-colim-item__name name-form-order">Оплати:</h5>
+													<div class="table-colim-item__inner">
+														<p class="table-colim-item__text name-form-order m-0">150 грн</p>
+														<button class="order-tel__btn icon-plus "></button>
+													</div>
+												</li>
+												<li class="table-colim-item">
+													<h5 class="table-colim-item__name name-form-order">Всього зароблено:</h5>
+													<h5 class="table-colim-item__name fw-bold m-0">250 UAH</h5>
+												</li>
+											</ul>
+										</div>
+									
 									</div>
+									<ul class="order-list">
+										<li class="order-list__item">
+											<div class="order-list__header">
+												<h5 class="order-list__name m-0">Коментар Клієнта:</h5>
+											</div>
+											<p class="order-list__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+												вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+												века. <a href="#" class="order-list__link">Читати далі</a></p>
+										</li>
+										<li class="order-list__item">
+											<div class="order-list__header">
+												<h5 class="order-list__name m-0">Коментар менеджера:</h5>
+												<button class="order-list__btn icon-pencil"></button>
+											</div>
+											<p class="order-list__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+												вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+												века. <a href="#" class="order-list__link">Читати далі</a></p>
+										</li>
+										<li class="order-list__item">
+											<h5 class="order-list__name m-0">Коментар Клієнта:</h5>
+											<p class="order-list__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+												вэб-дизайне. <button class="order-list__btn icon-pencil"></button></p>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
