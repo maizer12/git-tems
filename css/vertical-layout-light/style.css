@@ -31584,7 +31584,7 @@ div.tagsinput span.tag a {
 }
 
 .table-responsive #order-listing {
-  margin-bottom: 193px !important;
+  min-height: 500px;
 }
 
 div.dataTables_wrapper div.dataTables_length select {
@@ -32573,6 +32573,43 @@ input::-webkit-inner-spin-button {
 
 .column-order__table-cg {
   column-gap: 28px;
+}
+
+.order-title {
+  color: #000000;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.order-position {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.order-position span {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.order-window-buttons {
+  justify-content: end;
+}
+
+.order-item-sum {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
 }
 
 @media (max-width: 1200px) {
