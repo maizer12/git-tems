@@ -1234,7 +1234,7 @@ input::-webkit-inner-spin-button {
 	}
 }
 //popups
-.content-wrapper{
+.content-wrapper {
 	position: relative;
 }
 .popups-order {
@@ -1246,7 +1246,6 @@ input::-webkit-inner-spin-button {
 	background-color: rgba(rgb(0, 0, 0), 0.3);
 	z-index: 2;
 	display: flex;
-	padding-top: 100px;
 	justify-content: center;
 }
 .popups-order-inner {
@@ -1254,27 +1253,98 @@ input::-webkit-inner-spin-button {
 }
 
 .create-warehouse {
-	padding: 38px 32px; 
+	padding: 38px 32px;
+	max-width: 1586px;
+	width: 100%;
+	height: fit-content;
+	margin-top: 122px;
 	&__header {
 		justify-content: space-between;
 		display: flex;
 		align-items: center;
+		margin-bottom: 61px;
 	}
 	&__close {
 		border: 0;
 		background: none;
 		transition: 0.6s;
-		svg{
-			path{
+		svg {
+			path {
 				transition: 0.6s;
-			}}
-		&:hover{
-			svg{
-				path{
-					fill:#000000;
+			}
+		}
+		&:hover {
+			svg {
+				path {
+					fill: #000000;
 				}
 			}
 		}
+	}
+	&__title {
+		font-family: Roboto;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+}
+.create-selectors {
+	display: flex;
+	column-gap: 26px;
+	select {
+		font-family: Open Sans;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+	}
+	&__deleveri {
+		.window-order-select_wid {
+			max-width: 204px;
+		}
+	}
+	&__name {
+		font-family: Roboto;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #000000;
+		margin-bottom: 17px;
+	}
+	&__type {
+		.window-order-select_wid {
+			max-width: 170px;
+		}
+	}
+	&__sender {
+		.window-order-select_wid {
+			max-width: 324px;
+			width: 324px;
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+	.form-check .form-check-label{
+		margin-left: 1.25rem;
+	}
+	.form-check .form-check-label input[type='checkbox'] + .input-helper::before{
+		margin-top: 1px;
+	}
+	.form-check{
+		margin-left: 10px;
+	}
+}
+.icon-plus {
+	transition: 0.6s;
+	&:hover {
+		color: black;
 	}
 }
 @media (max-width: 1200px) {
