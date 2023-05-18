@@ -32920,6 +32920,10 @@ input::-webkit-inner-spin-button {
   margin-top: 122px;
 }
 
+.create-warehouse__create {
+  margin-top: 68px;
+}
+
 .create-warehouse__header {
   justify-content: space-between;
   display: flex;
@@ -33074,6 +33078,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0em;
+  border-radius: 3px;
 }
 
 .create-place__items {
@@ -33173,6 +33178,114 @@ input::-webkit-inner-spin-button {
 .create-place-item__add {
   margin: 0;
   margin-left: 32px;
+}
+
+.create-payment {
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+
+.create-payment__items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  column-gap: 46px;
+}
+
+.create-payment__title {
+  margin-bottom: 25px;
+}
+
+.create-payment-item__name {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.create-payment-item__items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.create-payment-item__item {
+  padding: 9px 14px;
+  border: 1px solid #cccccc;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.create-payment-item__item:first-child {
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+}
+
+.create-payment-item__item:last-child {
+  border-radius: 0 3px 3px 0;
+  border-left: 0;
+}
+
+.create-payment-item__item:hover {
+  border-color: #adadad;
+  color: #cccccc;
+}
+
+.create-payment-item__item_widt {
+  min-width: 135px;
+}
+
+.create-payment-item .active-play-item {
+  border-color: #adadad;
+  background-color: #e6e6e6;
+  box-shadow: 0px 3px 5px 0px #00000020 inset;
+}
+
+.create-payment-item__input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.create-additionally__items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  column-gap: 24px;
+}
+
+.create-additionally__item {
+  max-width: 242px;
+  width: 100%;
+}
+
+.create-additionally__input {
+  padding: 13px 11px;
+  line-height: 1;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0em;
+  width: 100%;
+  border-color: #ededed;
+}
+
+.create-additionally .input-group-text {
+  cursor: pointer;
+  background: none;
+  border-color: #fff;
+  color: #000000;
 }
 
 @media (max-width: 1200px) {

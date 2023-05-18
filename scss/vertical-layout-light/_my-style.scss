@@ -1258,6 +1258,9 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 	height: fit-content;
 	margin-top: 122px;
+	&__create{
+		margin-top: 68px;
+	}
 	&__header {
 		justify-content: space-between;
 		display: flex;
@@ -1402,6 +1405,7 @@ input::-webkit-inner-spin-button {
 		font-weight: 400;
 		line-height: 1;
 		letter-spacing: 0em;
+		border-radius: 3px;
 	}
 	&__items {
 		list-style: none;
@@ -1424,9 +1428,9 @@ input::-webkit-inner-spin-button {
 		text-align: left;
 		margin-bottom: 12px;
 	}
-	&__element-inner{
+	&__element-inner {
 		display: flex;
-		align-items:center;
+		align-items: center;
 		margin-top: 15px;
 	}
 	&__text {
@@ -1486,18 +1490,115 @@ input::-webkit-inner-spin-button {
 		letter-spacing: 0em;
 		margin: 0;
 		margin-top: -1px;
-		margin-left: 5px; 
+		margin-left: 5px;
 		text-align: center;
-		color:#000000;
+		color: #000000;
 	}
-	.form-check{
-		margin-left: 31px; 
+	.form-check {
+		margin-left: 31px;
 	}
-	&__add{
+	&__add {
 		margin: 0;
-		margin-left: 32px;	
+		margin-left: 32px;
 	}
 }
+.create-payment {
+	margin-top: 20px;
+	margin-bottom: 55px;
+	&__items {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		column-gap: 46px;
+	}
+	&__title {
+		margin-bottom: 25px;
+	}
+}
+.create-payment-item {
+	&__name {
+		margin: 0;
+		font-family: Roboto;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 0em;
+		color: #000000;
+		margin-bottom: 14px;
+	}
+	&__items {
+		display: flex;
+		list-style: none;
+		padding: 0;
+	}
+	&__item {
+		padding: 9px 14px;
+		border: 1px solid #cccccc;
+		font-family: Open Sans;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.6s;
+		&:first-child {
+			border-radius: 3px 0 0 3px;
+			border-right: 0;
+		}
+		&:last-child {
+			border-radius: 0 3px 3px 0;
+			border-left: 0;
+		}
+		&:hover {
+			border-color: #adadad;
+			color: #cccccc;
+		}
+	}
+	&__item_widt {
+		min-width: 135px;
+	}
+	.active-play-item {
+		border-color: #adadad;
+		background-color: #e6e6e6;
+		box-shadow: 0px 3px 5px 0px #00000020 inset;
+	}
+	&__input {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}
+.create-additionally {
+	&__items {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		column-gap: 24px;
+	}
+	&__item {
+		max-width: 242px;
+		width: 100%;
+	}
+	&__input {
+		padding: 13px 11px;
+		line-height: 1;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		color: #000000;
+		letter-spacing: 0em;
+		width: 100%;
+		border-color: #ededed;
+	}
+	.input-group-text {
+		cursor:pointer;
+		background: none;
+		border-color:#fff;
+		color:#000000;
+	}
+}
+
 @media (max-width: 1200px) {
 	.min-wid-cl {
 		width: auto;

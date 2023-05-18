@@ -1406,6 +1406,73 @@
 									</li>
 								</ul>
 							</div>
+							<div class="create-payment">
+								<h5 class="create-payment__title create-selectors__name">Оплата</h5>
+								<ul class="create-payment__items">
+									<li class="create-payment-item">
+										<p class="create-payment-item__name">
+											Платник доставки
+										</p>
+										<ul class="create-payment-item__items">
+											<li class="create-payment-item__item active-play-item">Відправник</li>
+											<li class="create-payment-item__item">Одержувач</li>
+											<li class="create-payment-item__item">Одержувач</li>
+										</ul>
+									</li>
+									<li class="create-payment-item">
+										<p class="create-payment-item__name">
+											Форма  оплати
+										</p>
+										<ul class="create-payment-item__items">
+											<li class="create-payment-item__item create-payment-item__item_widt">Безготівковий</li>
+											<li class="create-payment-item__item active-play-item create-payment-item__item_widt">Готівка</li>
+										</ul>
+									</li>
+									<li class="create-payment-item">
+										<p class="create-payment-item__name">
+											Зворотня доставка
+										</p>
+										<input type="text" value="300 грн" class="create-payment-item__input create-place__input m-0">
+									</li>
+									<li class="create-payment-item">
+										<p class="create-payment-item__name">
+											Платник за зворотню доставку
+										</p>
+										<ul class="create-payment-item__items">
+											<li class="create-payment-item__item">Відправник</li>
+											<li class="create-payment-item__item active-play-item">Одержувач</li>
+											<li class="create-payment-item__item">Третя особа</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="create-additionally">
+								<h5 class="create-additionally__title create-selectors__name">Додатково</h5>
+								<ul class="create-additionally__items">
+									<li class="create-additionally__item">
+										<p class="create-additionally__name">Опис посилання</p>
+										<input type="text" value='Автозапчастини' class="create-additionally__input form-control">
+									</li>
+									<li class="create-additionally__item">
+										<p class="create-additionally__name">Номер пакування</p>
+										<input type="number" value='121321' class="create-additionally__input form-control">
+									</li>
+									<li class="create-additionally__item">
+										<p class="create-additionally__name">Номер замовлення</p>
+										<input type="number" value='1232' class="create-additionally__input form-control">
+									</li>
+									<li class="create-additionally__item">
+										<p class="create-additionally__name">Дата відправки</p>
+										<div id="datepicker-popup" class="input-group date datepicker">
+											<input type="text" class="form-control ">
+											<span class="input-group-addon date-btn-address input-group-append  ">
+												<span class="fa fa-calendar input-group-text pl-14 pr-14"></span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<button class="create-warehouse__create btn btn-primary btn-lg">Створити ТТН</button>
 						</div>
 					</div>
 				</div>
@@ -1434,6 +1501,8 @@
 		<script src="../../../../js/js-grid.js"></script>
 		<script src="../../../../js/db.js"></script>
 		<script src="../../../../js/my-js.js"></script>
+		<script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+		<script src="../../../../js/formpickers.js"></script>
 </body>
 
 </html>
