@@ -32954,6 +32954,7 @@ input::-webkit-inner-spin-button {
 .create-selectors {
   display: flex;
   column-gap: 26px;
+  margin-bottom: 23px;
 }
 
 .create-selectors select {
@@ -32994,7 +32995,7 @@ input::-webkit-inner-spin-button {
 }
 
 .create-selectors .form-check .form-check-label {
-  margin-left: 1.25rem;
+  margin-left: 1.40rem;
 }
 
 .create-selectors .form-check .form-check-label input[type='checkbox'] + .input-helper::before {
@@ -33002,7 +33003,69 @@ input::-webkit-inner-spin-button {
 }
 
 .create-selectors .form-check {
-  margin-left: 10px;
+  margin-left: 4px;
+}
+
+.create-address {
+  margin-bottom: 17px;
+}
+
+.create-address__selectors {
+  display: flex;
+  column-gap: 14px;
+}
+
+.create-address .window-order-select {
+  width: 180px;
+}
+
+.create-address__name {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.create-place__header {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.create-place__title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+  margin-right: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.create-place__sub-title {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: black;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.create-place__input {
+  padding: 10px 7px;
+  max-width: 111px;
+  border: 1px solid #ededed;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
 }
 
 .icon-plus {
