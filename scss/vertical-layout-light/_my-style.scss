@@ -1267,10 +1267,9 @@ input::-webkit-inner-spin-button {
 	&__close {
 		border: 0;
 		background: none;
-		transition: 0.6s;
 		svg {
 			path {
-				transition: 0.6s;
+				transition: 0.4s;
 			}
 		}
 		&:hover {
@@ -1333,13 +1332,19 @@ input::-webkit-inner-spin-button {
 		align-items: center;
 	}
 	.form-check .form-check-label {
-		margin-left: 1.40rem;
+		margin-left: 1.4rem;
 	}
 	.form-check .form-check-label input[type='checkbox'] + .input-helper::before {
 		margin-top: 1px;
 	}
 	.form-check {
 		margin-left: 4px;
+	}
+}
+.icon-plus {
+	transition: 0.6s;
+	&:hover {
+		color: black;
 	}
 }
 .create-address {
@@ -1366,6 +1371,7 @@ input::-webkit-inner-spin-button {
 		display: flex;
 		column-gap: 20px;
 		align-items: center;
+		margin-bottom: 17px;
 	}
 	&__title {
 		font-family: Roboto;
@@ -1397,11 +1403,99 @@ input::-webkit-inner-spin-button {
 		line-height: 1;
 		letter-spacing: 0em;
 	}
+	&__items {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: 23px;
+	}
 }
-.icon-plus {
-	transition: 0.6s;
-	&:hover {
-		color: black;
+
+.create-place-item {
+	&__name {
+		font-family: Roboto;
+		margin: 0;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 12px;
+	}
+	&__element-inner{
+		display: flex;
+		align-items:center;
+		margin-top: 15px;
+	}
+	&__text {
+		font-family: Roboto;
+		font-size: 14px;
+		margin: 0;
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 0em;
+		color: #000000;
+	}
+	&__input {
+		border: 1px solid #ededed;
+		padding: 15px 8px;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1;
+		max-width: 111px;
+		letter-spacing: 0em;
+	}
+	&__label {
+		margin-top: 15px;
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+	}
+	&__inner {
+		display: flex;
+		column-gap: 15px;
+	}
+	&__element_mr {
+		margin-right: 16px;
+	}
+	&__reset {
+		margin-left: 5px;
+		border: 0;
+		background: none;
+		svg {
+			path {
+				transition: 0.4s;
+			}
+		}
+		&:hover {
+			svg {
+				path {
+					fill: red;
+				}
+			}
+		}
+	}
+	&__evens {
+		font-family: Roboto;
+		font-size: 23px;
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 0em;
+		margin: 0;
+		margin-top: -1px;
+		margin-left: 5px; 
+		text-align: center;
+		color:#000000;
+	}
+	.form-check{
+		margin-left: 31px; 
+	}
+	&__add{
+		margin: 0;
+		margin-left: 32px;	
 	}
 }
 @media (max-width: 1200px) {
