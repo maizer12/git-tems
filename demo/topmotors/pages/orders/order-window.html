@@ -567,7 +567,8 @@
 													</li>
 												</ul>
 												<div class="order-column-elem__footer">
-													<button class="order-column-elem__link create-tth name-form-order order-column-elem__link_color">Створити
+													<button
+														class="order-column-elem__link create-tth name-form-order order-column-elem__link_color">Створити
 														ТТН</button>
 													<button class="order-column-elem__link  name-form-order">Додати
 														існуючу ТТН</button>
@@ -1153,7 +1154,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="popups-order">
+					<div class="popups-order popups-order-create">
 						<div class=" popups-order-inner create-warehouse">
 							<div class="create-warehouse__header">
 								<h4 class="create-warehouse__title m-0">Створення ТТН</h4>
@@ -1190,16 +1191,33 @@
 								</div>
 								<div class="create-selectors__sender">
 									<h5 class="create-selectors__name">Відправник</h5>
-									<div class="create-selectors__item">
+									<div class="create-selectors__item create-selectors__item_df">
 										<label class="window-order-select window-order-select_wid m-0 window-order-select_big">
-											<select name="" id="" class="window-order-select__inner">
-												<option value="1">Оберіть адресу</option>
+											<select name="" id="" class="create-max-select window-order-select__inner  ">
+												<option value="1">Оберіть контакт</option>
 												<option value="2"> Отримано</option>
 												<option value="3"> У дорозі</option>
 											</select>
 											<i class="icon-arrow-down window-order-select__arrow"></i>
 										</label>
-										<button class="order-tel__btn icon-plus m-0"></button>
+										<div class="create-selectors__item_min">
+											<label class="window-order-select window-order-select_wid m-0 window-order-select_big">
+												<select name="" id="" class="create-max-select window-order-select__inner  ">
+													<option value="1">Місто</option>
+													<option value="2"> Отримано</option>
+													<option value="3"> У дорозі</option>
+												</select>
+												<i class="icon-arrow-down window-order-select__arrow"></i>
+											</label>
+											<label class="window-order-select window-order-select_wid m-0 window-order-select_big">
+												<select name="" id="" class="create-max-select window-order-select__inner  ">
+													<option value="1">Відділення</option>
+													<option value="2"> Отримано</option>
+													<option value="3"> У дорозі</option>
+												</select>
+												<i class="icon-arrow-down window-order-select__arrow"></i>
+											</label>
+										</div>
 									</div>
 								</div>
 								<div class="create-selectors__sender">
@@ -1473,6 +1491,84 @@
 								</ul>
 							</div>
 							<button class="create-warehouse__create btn btn-primary btn-lg">Створити ТТН</button>
+							<div class="popups-create-client">
+								<div class="popups-create-client__inner">
+									<div class="popups-create-client__header">
+										<h5 class="popups-create-client__title m-0">Створення одержувача до клієнта Кондауров Максим</h5>
+										<button class="popups-create-client__close m-0">
+											<svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.489 0L17.5 10.9011L24.511 0H34.6987L23.3607 15.8681L35 32H24.73L17.5 20.9011L10.2973 32H0L11.6667 15.8681L0.301252 0H10.489Z"
+													fill="#FF4747" />
+											</svg>
+
+										</button>
+									</div>
+									<div class="popups-create-client__form">
+										<div class="popups-create-client__items">
+											<div class="create-address__selector">
+												<p class="create-address__name">Відправник</p>
+												<label class="popups-create-client__select window-order-select m-0 window-order-select_big">
+													<select name="" id="" class="window-order-select__inner">
+														<option value="1">Приватна особа</option>
+														<option value="2"> Отримано</option>
+														<option value="3"> У дорозі</option>
+													</select>
+													<i class="icon-arrow-down window-order-select__arrow"></i>
+												</label>
+											</div>
+											<div class="popups-create-client__input">
+												<div class="create-place-item__element">
+													<p class="create-address__name">Телефон</p>
+													<input type="number" value="380686878088" class="create-place-item__input">
+												</div>
+											</div>
+											<div class="popups-create-client__input popups-create-client__input_width">
+												<div class="create-place-item__element">
+													<p class="create-address__name">ФІО</p>
+													<input type="text" value="Кондауров Максим Генадійович" class="create-place-item__input create-place-item__input_width">
+												</div>
+											</div>
+										</div>
+										<div class="popups-create-client__items">
+											<div class="create-address__selector">
+												<p class="create-address__name">Область</p>
+												<label class="popups-create-client__select window-order-select m-0 window-order-select_big">
+													<select name="" id="" class="window-order-select__inner">
+														<option value="1">Запорізька</option>
+														<option value="2"> Отримано</option>
+														<option value="3"> У дорозі</option>
+													</select>
+													<i class="icon-arrow-down window-order-select__arrow"></i>
+												</label>
+											</div>
+											<div class="create-address__selector">
+												<p class="create-address__name">Місто</p>
+												<label class="popups-create-client__select window-order-select m-0 window-order-select_big">
+													<select name="" id="" class="window-order-select__inner">
+														<option value="1">Запорізька</option>
+														<option value="2"> Отримано</option>
+														<option value="3"> У дорозі</option>
+													</select>
+													<i class="icon-arrow-down window-order-select__arrow"></i>
+												</label>
+											</div>
+											<div class="create-address__selector create-address__selector_wid">
+												<p class="create-address__name">Відділення</p>
+												<label class="popups-create-client__select window-order-select m-0 window-order-select_big">
+													<select name="" id="" class="window-order-select__inner">
+														<option value="1">Запорізька</option>
+														<option value="2"> Отримано</option>
+														<option value="3"> У дорозі</option>
+													</select>
+													<i class="icon-arrow-down window-order-select__arrow"></i>
+												</label>
+											</div>
+										</div>
+										<button class="popups-create-client__create btn btn-primary btn-lg">Створити ТТН</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
