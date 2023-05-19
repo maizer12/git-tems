@@ -76,10 +76,11 @@ ordersItemsAll?.addEventListener('click', (e)=>{
 const popupMailTel = document.querySelector('.popup-mail-tel')
 const closeMailTel = document.querySelector('.popup-mail-tel__close')
 const popupTitle =	document.querySelector('.popup-mail-tel__title')
-//3 buttons
+//4 buttons
 const openTellBtn = document.querySelector('.open-tell')
 const openAddressBtn = document.querySelector('.open-address')
 const openMailBtn = document.querySelector('.open-mail')
+const openTTHBtn = document.querySelector('.open-new-thh')
 
 
 
@@ -108,3 +109,4 @@ closeMailTel?.addEventListener('click', ()=> switchPopMailTel(false))
 openTellBtn?.addEventListener('click', ()=> switchPopMailTel('Додати номер клієнта'))
 openAddressBtn?.addEventListener('click', ()=> switchPopMailTel('Додати адресу відділення'))
 openMailBtn?.addEventListener('click', ()=> switchPopMailTel('Додати пошту клієнта'))
+openTTHBtn?.addEventListener('click', ()=> switchPopMailTel('Додати існуючу ТТН'))
