@@ -33686,6 +33686,10 @@ input::-webkit-inner-spin-button {
   transform: scale(1);
 }
 
+.communication-popup__select-width {
+  max-width: 260px !important;
+}
+
 @media (max-width: 1600px) {
   .window-order__header {
     flex-direction: column;

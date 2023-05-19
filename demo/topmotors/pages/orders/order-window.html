@@ -450,11 +450,11 @@
 											<div class="order-column__desc d-flex">
 												<p class="order-column__text">
 													Авто клієнта: Lanos 1.5 (ЗАЗ)| 2005 рік
-													<button class="order-list__btn icon-pencil m-0"></button>
+													<button class="order-list__btn rename-client-auto icon-pencil m-0"></button>
 												</p>
 												<p class="order-column__text">
 													Комментар по авто: Комплектація LUX
-													<button class="order-list__btn icon-pencil m-0"></button>
+													<button class="order-list__btn icon-pencil comment-client-auto m-0"></button>
 												</p>
 											</div>
 											<div class="order-column__column">
@@ -481,18 +481,20 @@
 														<button class="order-tel__btn open-tell icon-plus"></button>
 													</div>
 													<div class="window-order__buttons d-flex col-gap-df">
-														<a href="./form-create.html" type="button" class=" btn btn-primary btn-lg p-2 ">
+														<button class=" btn-window-tell btn btn-primary btn-lg p-2 ">
 															<i class=" icon-phone"></i>
-														</a>
-														<a href="./form-create.html" type="button" class=" btn btn-success btn-lg p-2 ">
+														</button>
+														<button  class=" btn btn-success btn-window-mail btn-lg p-2 ">
 															<i class="icon-bubbles"></i>
-														</a>
+														</button>
 													</div>
 													<div class="order-tel">
 														<div class="order-tel__inner">
 															<p class="order-tel__name name-form-order m-0">Email:</p>
+															<div class="order-tel__tell-items">
 															<a href="mailto:maxopenstudio@gmail.com"
 																class='link-form-order'>maxopenstudio@gmail.com</a>
+															</div>
 														</div>
 														<button class="order-tel__btn open-mail icon-plus"></button>
 													</div>
@@ -613,8 +615,8 @@
 											<li class="table-colim-item">
 												<h5 class="table-colim-item__name name-form-order">Знижка:</h5>
 												<div class="table-colim-item__inner">
-													<p class="table-colim-item__text name-form-order m-0">Знижка відсутня</p>
-													<button class="order-tel__btn icon-plus"></button>
+													<p class="table-colim-item__text name-form-order  m-0 ">Знижка відсутня</p>
+													<button class="order-tel__btn create-sale icon-plus"></button>
 												</div>
 											</li>
 										</ul>
@@ -640,14 +642,14 @@
 													<h5 class="table-colim-item__name name-form-order">Витрати по замовленню:</h5>
 													<div class="table-colim-item__inner">
 														<p class="table-colim-item__text name-form-order m-0">Немає витрат</p>
-														<button class="order-tel__btn icon-plus"></button>
+														<button class="order-tel__btn create-costs icon-plus"></button>
 													</div>
 												</li>
 												<li class="table-colim-item">
 													<h5 class="table-colim-item__name name-form-order">Оплати:</h5>
 													<div class="table-colim-item__inner">
 														<p class="table-colim-item__text name-form-order m-0">150 грн</p>
-														<button class="order-tel__btn icon-plus "></button>
+														<button class="order-tel__btn open-create-payment icon-plus "></button>
 													</div>
 												</li>
 												<li class="table-colim-item">
@@ -669,7 +671,7 @@
 										<li class="order-list__item">
 											<div class="order-list__header">
 												<h5 class="order-list__name m-0">Коментар менеджера:</h5>
-												<button class="order-list__btn icon-pencil"></button>
+												<button class="order-list__btn add-new-coment icon-pencil"></button>
 											</div>
 											<p class="order-list__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
 												вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
@@ -678,7 +680,7 @@
 										<li class="order-list__item">
 											<h5 class="order-list__name m-0">Коментар Клієнта:</h5>
 											<p class="order-list__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-												вэб-дизайне. <button class="order-list__btn icon-pencil"></button></p>
+												вэб-дизайне. <button class="order-list__btn add-new-coment icon-pencil"></button></p>
 										</li>
 									</ul>
 								</div>
@@ -810,8 +812,8 @@
 																		</td>
 																		<td>
 																			<p class="order-item-sum m-0">
-																				50 UAH
-																				<button class="order-list__btn icon-pencil m-0"></button>
+																				52 UAH
+																				<button class="order-list__btn add-bonus-uah icon-pencil m-0"></button>
 																			</p>
 																		</td>
 																		<td class="order-item-tags">
@@ -923,8 +925,8 @@
 																		</td>
 																		<td>
 																			<p class="order-item-sum m-0">
-																				50 UAH
-																				<button class="order-list__btn icon-pencil m-0"></button>
+																				52 UAH
+																				<button class="order-list__btn add-bonus-uah icon-pencil m-0"></button>
 																			</p>
 																		</td>
 																		<td class="order-item-tags">
@@ -1036,8 +1038,8 @@
 																		</td>
 																		<td>
 																			<p class="order-item-sum m-0">
-																				50 UAH
-																				<button class="order-list__btn icon-pencil m-0"></button>
+																				52 UAH
+																				<button class="order-list__btn add-bonus-uah icon-pencil m-0"></button>
 																			</p>
 																		</td>
 																		<td class="order-item-tags">
@@ -1149,8 +1151,8 @@
 																		</td>
 																		<td>
 																			<p class="order-item-sum m-0">
-																				50 UAH
-																				<button class="order-list__btn icon-pencil m-0"></button>
+																				52 UAH
+																				<button class="order-list__btn add-bonus-uah icon-pencil m-0"></button>
 																			</p>
 																		</td>
 																		<td class="order-item-tags">
@@ -1170,6 +1172,120 @@
 																			</button>
 																		</td>
 																	</tr>
+																	<tr class="orders-items">
+																		<td>
+																			<div class="form-check m-0">
+																				<label class="form-check-label ">
+																					<input type="checkbox" class="form-check-input">
+																					1
+																					<i class="input-helper"></i>
+																					<i class="input-helper"></i>
+																				</label>
+																			</div>
+																		</td>
+																		<td class='p-0 mar-rith'>
+																			<div class="order-product">
+																				<div class="order-product__images">
+																					<img src="../../../../images/product.png" alt="product"
+																						class="order-product__img">
+																				</div>
+																				<div class="order-product__contant ">
+																					<h5 class="order-product__name">Фільтр масляний</h5>
+																					<ul class="order-product__items">
+																						<li class="order-product__item">SKU: 251232DR</li>
+																						<li class="order-product__item">SKU: 251232DR</li>
+																						<li class="order-product__item">
+																							<span>Продаж: 400 UAH</span>
+																							<span>Закуп: 200 UAH
+																								<button class="order-list__btn icon-pencil m-0"></button>
+																							</span>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="p-0">
+																			<ul class="order-availability">
+																				<li class="order-availability__item">
+																					<h5 class="order-availability__name">Склад на хрещатику :</h5>
+																					<p class="order-availability__sum">2 шт</p>
+																				</li>
+																				<li class="order-availability__item">
+																					<h5 class="order-availability__name">Магазин :</h5>
+																					<p class="order-availability__sum">2 шт</p>
+																				</li>
+																				<li class="order-availability__item">
+																					<h5 class="order-availability__name">Склад :</h5>
+																					<p style='color:#FF0B0B;' class="order-availability__sum">2 шт</p>
+																				</li>
+																			</ul>
+																		</td>
+																		<td>
+																			<label
+																				class="window-order-select window-order-select_w  m-0 window-order-select_big">
+																				<select name="" id="" class="window-order-select__inner">
+																					<option value="1">Склад</option>
+																					<option value="2"> Склад</option>
+																					<option value="3"> Склад</option>
+																				</select>
+																				<i class="icon-arrow-down window-order-select__arrow"></i>
+																			</label>
+																		</td>
+																		<td class="orders-item-sum">
+																			<label
+																				class="window-order-select window-order-select_w  m-0 window-order-select_big">
+																				<select name="" id="" class="window-order-select__inner">
+																					<option value="1">Немає</option>
+																					<option value="2"> Немає</option>
+																					<option value="3"> Немає</option>
+																				</select>
+																				<i class="icon-arrow-down window-order-select__arrow"></i>
+																			</label>
+																		</td>
+																		<td>
+																			<label
+																				class="window-order-select window-order-select_w  m-0 window-order-select_big">
+																				<select name="" id="" class="window-order-select__inner">
+																					<option value="1">Очікує</option>
+																					<option value="2"> Очікує</option>
+																					<option value="3"> Очікує</option>
+																				</select>
+																				<i class="icon-arrow-down window-order-select__arrow"></i>
+																			</label>
+																		</td>
+																		<td>
+																			<div class="order-item-input">
+																				<button class="order-item-input__btn btn-minus-calk icon-minus"></button>
+																				<input value='1' type="number"
+																					class="order-item-input__input input-result-calk">
+																				<button class="order-item-input__btn   btn-plus-calk icon-plus"></button>
+
+																			</div>
+																		</td>
+																		<td>
+																			<p class="order-item-sum m-0">
+																				52 UAH
+																				<button class="order-list__btn add-bonus-uah icon-pencil m-0"></button>
+																			</p>
+																		</td>
+																		<td class="order-item-tags">
+																			<p class="order-item-sum m-0">
+																				750 UAH
+																			</p>
+																		</td>
+																		<td class="order-item-buttons order-window-buttons mb-0 ">
+																			<button
+																				class="order-item-buttons__btn fs-6 icon-basket mb-0 btn bg-black btn-lg p-2 ">
+																			</button>
+																			<button
+																				class="order-item-buttons__btn  icon-docs mb-0 btn btn-primary btn-lg rounded-0 fs-6 p-2">
+																			</button>
+																			<button
+																				class="order-item-buttons__btn mb-0 btn fs-6  p-2    bg-new btn-lg icon-trash rounded-0">
+																			</button>
+																		</td>
+																	</tr>
+
 
 																</tbody>
 															</table>
@@ -1714,11 +1830,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="communication-popup open-window-client">
+					<div class="communication-popup communication-popup-tell">
 						<div class="communication-popup__inner">
 							<div class="communication-popup__header">
 								<h4 class="communication-popup__title m-0">Зв’язок з клієнтом</h4>
-								<button class="communication-popup__close">
+								<button class="communication-popup__close communication-btn-tel">
 									<svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M10.489 0L17.5 10.9011L24.511 0H34.6987L23.3607 15.8681L35 32H24.73L17.5 20.9011L10.2973 32H0L11.6667 15.8681L0.301252 0H10.489Z"
@@ -1746,6 +1862,60 @@
 										<p class="communication-popup__choice-item">SMS</p>
 									</div>
 								</div>
+							</div>
+							<div class="communication-popup__content">
+								<textarea class="form-control communication-popup__text-area" placeholder='Повідомлення'
+									id="exampleTextarea1" rows="4"></textarea>
+								<div class="communication-popup__dropdown dropdown">
+									<button type="button" class="communication-popup__dropdown-btn btn btn-dark dropdown-toggle"
+										id="dropdownMenuIconButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Шаблони повідомлень
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton7" style="">
+										<a class="dropdown-item" href="#">Шаблон 1</a>
+										<a class="dropdown-item" href="#">Шаблон 1</a>
+										<a class="dropdown-item" href="#">Шаблон 1</a>
+									</div>
+								</div>
+							</div>
+							<div class="communication-popup__footer">
+								<button type="submit" class="communication-popup__btn btn btn-primary me-2">Надіслати</button>
+								<div class="form-check m-0">
+									<label class="form-check-label ">
+										<input type="checkbox" class="form-check-input">
+										Зберегти як шаблон
+										<i class="input-helper"></i>
+										<i class="input-helper"></i>
+									<i class="input-helper"></i></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="communication-popup communication-popup-mail">
+						<div class="communication-popup__inner">
+							<div class="communication-popup__header">
+								<h4 class="communication-popup__title m-0">Зв’язок з клієнтом</h4>
+								<button class="communication-popup__close communication-btn-mail">
+									<svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.489 0L17.5 10.9011L24.511 0H34.6987L23.3607 15.8681L35 32H24.73L17.5 20.9011L10.2973 32H0L11.6667 15.8681L0.301252 0H10.489Z"
+											fill="#FF4747" />
+									</svg>
+								</button>
+							</div>
+							<div class="communication-popup__items">
+								<div class="communication-popup__select  create-address__selector">
+									<p class="create-address__name">Пошта клієнта</p>
+									<label class="window-order-select communication-popup__select-width m-0 window-order-select_big fw-bold">
+										<select name="" id="" class="window-order-select__inner">
+											<option value="1">vvvasdsadas@mail.com</option>
+											<option value="2"> Отримано</option>
+											<option value="3"> У дорозі</option>
+										</select>
+										<i class="icon-arrow-down window-order-select__arrow"></i>
+									</label>
+								</div>
+
 							</div>
 							<div class="communication-popup__content">
 								<textarea class="form-control communication-popup__text-area" placeholder='Повідомлення'
