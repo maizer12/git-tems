@@ -45,3 +45,32 @@ const closeClientPop = e => {
 popupsCreateClient?.addEventListener('click', closeClientPop)
 buttonCloseAddClient?.addEventListener('click', () => switchClientPop(false))
 buttonOpenAddClient?.addEventListener('click',  () => switchClientPop(true))
+
+//plus-minus
+
+const ordersItemsAll = document.querySelector('.order-wind-items')
+const inputsResultAll = document.querySelectorAll('.input-result-calk') 
+
+if(inputsResultAll){
+	console.log(inputsResultAll)
+	inputsResultAll.forEach(element => {
+		console.log(element)
+		element.disabled = true
+	}); 
+}
+
+
+
+ordersItemsAll?.addEventListener('click', (e)=>{
+	const elem = e.target
+	const plus = elem.classList.contains('btn-plus-calk')
+	const minus = elem.classList.contains('btn-minus-calk')
+	const input = elem.parentNode.querySelector('.order-item-input__input')
+	const num = Number(input.value)
+	if(plus){
+		input.value = num  + 1
+	}
+	if(minus && num){
+		input.value = num  - 1
+	}
+})

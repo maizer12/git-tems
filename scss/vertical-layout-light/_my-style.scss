@@ -632,6 +632,12 @@ input::-webkit-inner-spin-button {
 		width: 100%;
 	}
 }
+.icon-arrow-down{
+	pointer-events: none;
+}
+.icon-arrow-down_rith{
+		right: 7px !important;
+}
 .order-column {
 	&__inner {
 		display: flex;
@@ -682,6 +688,9 @@ input::-webkit-inner-spin-button {
 	letter-spacing: 0em;
 	text-align: left;
 }
+.input-result-calk{
+	background-color:#fff;
+}
 .name-form-input {
 	font-family: Roboto;
 	font-size: 14px;
@@ -694,7 +703,6 @@ input::-webkit-inner-spin-button {
 	border: 1px solid #ededed;
 	display: block;
 	min-width: 215px;
-	cursor: default;
 	&::placeholder {
 		color: #212529;
 	}

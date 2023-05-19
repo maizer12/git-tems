@@ -392,7 +392,7 @@
 											<option value="2"> Отримано</option>
 											<option value="3"> У дорозі</option>
 										</select>
-										<i class="icon-arrow-down window-order-select__arrow"></i>
+										<i class="icon-arrow-down icon-arrow-down_rith icon-arrow-down_rith window-order-select__arrow"></i>
 									</label>
 									<div class="min-select">
 										<p class="min-select__name mb-1 ">Джерело замовлення</p>
@@ -402,7 +402,7 @@
 												<option value="2"> Сайт</option>
 												<option value="3"> Сайт</option>
 											</select>
-											<i class="icon-arrow-down window-order-select__arrow"></i>
+											<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
 										</label>
 									</div>
 									<div class="window-order__date">
@@ -417,7 +417,7 @@
 												<option value="2"> Пряма продажа</option>
 												<option value="3"> Пряма продажа</option>
 											</select>
-											<i class="icon-arrow-down window-order-select__arrow"></i>
+											<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
 										</label>
 									</div>
 								</div>
@@ -461,11 +461,11 @@
 												<div class="order-column__inputs mb-2">
 													<div class="order-column__input">
 														<p class='name-form-order '>Клієнт в crm:</p>
-														<p class="name-form-input">Кондауров Максим</p>
+														<input type="text" class="form-control name-form-input " id="exampleInputUsername1" value='Кондауров Максим' placeholder="Username">
 													</div>
 													<div class="order-column__input">
 														<p class='name-form-order '>Клієнт в замовленні:</p>
-														<p class="name-form-input">Кондауров Максим Геннадійович</p>
+														<input type="text" class="form-control name-form-input " id="exampleInputUsername1" value='Кондауров Максим Геннадійович' placeholder="Username">
 													</div>
 												</div>
 												<div class="order-column__contact mb-4">
@@ -500,7 +500,7 @@
 															<option value="2"> Отримано</option>
 															<option value="3"> У дорозі</option>
 														</select>
-														<i class="icon-arrow-down window-order-select__arrow"></i>
+														<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
 													</label>
 													<button class="order-tel__btn m-0 icon-plus"></button>
 												</div>
@@ -535,7 +535,7 @@
 															<option value="2"> Отримано</option>
 															<option value="3"> У дорозі</option>
 														</select>
-														<i class="icon-arrow-down window-order-select__arrow"></i>
+														<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
 													</label>
 												</div>
 												<div class="order-column-elem__select">
@@ -546,7 +546,7 @@
 															<option value="2"> Отримано</option>
 															<option value="3"> У дорозі</option>
 														</select>
-														<i class="icon-arrow-down window-order-select__arrow"></i>
+														<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
 													</label>
 												</div>
 												<p class="name-form-order mt-2">ТТН:</p>
@@ -622,7 +622,7 @@
 															<option value="2"> Отримано</option>
 															<option value="3"> У дорозі</option>
 														</select>
-														<i class="icon-arrow-down window-order-select__arrow"></i>
+														<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
 													</label>
 												</div>
 												<button type="button" class=" btn btn-success btn-lg p-2 mr-3">
@@ -687,7 +687,7 @@
 
 								<div class="row storage-table ">
 									<div class="col-12">
-										<div class="table-responsive ">
+										<div class="table-responsive order-wind-items">
 											<table id="order-listing" class="table ">
 												<tbody>
 													<tr>
@@ -795,9 +795,9 @@
 																		</td>
 																		<td>
 																			<div class="order-item-input">
-																				<button class="order-item-input__btn icon-minus"></button>
-																				<input value='1' type="number" class="order-item-input__input">
-																				<button class="order-item-input__btn icon-plus"></button>
+																				<button class="order-item-input__btn btn-minus-calk icon-minus"></button>
+																				<input value='1' type="number" class="order-item-input__input input-result-calk">
+																				<button class="order-item-input__btn   btn-plus-calk icon-plus"></button>
 
 																			</div>
 																		</td>
@@ -907,9 +907,9 @@
 																		</td>
 																		<td>
 																			<div class="order-item-input">
-																				<button class="order-item-input__btn icon-minus"></button>
-																				<input value='1' type="number" class="order-item-input__input">
-																				<button class="order-item-input__btn icon-plus"></button>
+																				<button class="order-item-input__btn btn-minus-calk icon-minus"></button>
+																				<input value='1' type="number" class="order-item-input__input input-result-calk">
+																				<button class="order-item-input__btn   btn-plus-calk icon-plus"></button>
 
 																			</div>
 																		</td>
@@ -1019,9 +1019,121 @@
 																		</td>
 																		<td>
 																			<div class="order-item-input">
-																				<button class="order-item-input__btn icon-minus"></button>
-																				<input value='1' type="number" class="order-item-input__input">
-																				<button class="order-item-input__btn icon-plus"></button>
+																				<button class="order-item-input__btn btn-minus-calk icon-minus"></button>
+																				<input value='1' type="number" class="order-item-input__input input-result-calk">
+																				<button class="order-item-input__btn   btn-plus-calk icon-plus"></button>
+
+																			</div>
+																		</td>
+																		<td>
+																			<p class="order-item-sum m-0">
+																				50 UAH
+																				<button class="order-list__btn icon-pencil m-0"></button>
+																			</p>
+																		</td>
+																		<td class="order-item-tags">
+																			<p class="order-item-sum m-0">
+																				750 UAH
+																			</p>
+																		</td>
+																		<td class="order-item-buttons order-window-buttons mb-0 ">
+																			<button
+																				class="order-item-buttons__btn fs-6 icon-basket mb-0 btn bg-black btn-lg p-2 ">
+																			</button>
+																			<button
+																				class="order-item-buttons__btn  icon-docs mb-0 btn btn-primary btn-lg rounded-0 fs-6 p-2">
+																			</button>
+																			<button
+																				class="order-item-buttons__btn mb-0 btn fs-6  p-2    bg-new btn-lg icon-trash rounded-0">
+																			</button>
+																		</td>
+																	</tr>
+																	<tr class="orders-items">
+																		<td>
+																			<div class="form-check m-0">
+																				<label class="form-check-label ">
+																					<input type="checkbox" class="form-check-input">
+																					1
+																					<i class="input-helper"></i>
+																					<i class="input-helper"></i>
+																				</label>
+																			</div>
+																		</td>
+																		<td class='p-0'>
+																			<div class="order-product">
+																				<div class="order-product__images">
+																					<img src="../../../../images/product.png" alt="product"
+																						class="order-product__img">
+																				</div>
+																				<div class="order-product__contant ">
+																					<h5 class="order-product__name">Фільтр масляний</h5>
+																					<ul class="order-product__items">
+																						<li class="order-product__item">SKU: 251232DR</li>
+																						<li class="order-product__item">SKU: 251232DR</li>
+																						<li class="order-product__item">
+																							<span>Продаж: 400 UAH</span>
+																							<span>Закуп: 200 UAH
+																								<button class="order-list__btn icon-pencil m-0"></button>
+																							</span>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="p-0">
+																			<ul class="order-availability">
+																				<li class="order-availability__item">
+																					<h5 class="order-availability__name">Склад на хрещатику :</h5>
+																					<p class="order-availability__sum">2 шт</p>
+																				</li>
+																				<li class="order-availability__item">
+																					<h5 class="order-availability__name">Магазин :</h5>
+																					<p class="order-availability__sum">2 шт</p>
+																				</li>
+																				<li class="order-availability__item">
+																					<h5 class="order-availability__name">Склад :</h5>
+																					<p style='color:#FF0B0B;' class="order-availability__sum">2 шт</p>
+																				</li>
+																			</ul>
+																		</td>
+																		<td>
+																			<label
+																				class="window-order-select window-order-select_w  m-0 window-order-select_big">
+																				<select name="" id="" class="window-order-select__inner">
+																					<option value="1">Склад</option>
+																					<option value="2"> Склад</option>
+																					<option value="3"> Склад</option>
+																				</select>
+																				<i class="icon-arrow-down window-order-select__arrow"></i>
+																			</label>
+																		</td>
+																		<td class="orders-item-sum">
+																			<label
+																				class="window-order-select window-order-select_w  m-0 window-order-select_big">
+																				<select name="" id="" class="window-order-select__inner">
+																					<option value="1">Немає</option>
+																					<option value="2"> Немає</option>
+																					<option value="3"> Немає</option>
+																				</select>
+																				<i class="icon-arrow-down window-order-select__arrow"></i>
+																			</label>
+																		</td>
+																		<td>
+																			<label
+																				class="window-order-select window-order-select_w  m-0 window-order-select_big">
+																				<select name="" id="" class="window-order-select__inner">
+																					<option value="1">Очікує</option>
+																					<option value="2"> Очікує</option>
+																					<option value="3"> Очікує</option>
+																				</select>
+																				<i class="icon-arrow-down window-order-select__arrow"></i>
+																			</label>
+																		</td>
+																		<td>
+																			<div class="order-item-input">
+																				<button class="order-item-input__btn btn-minus-calk icon-minus"></button>
+																				<input value='1' type="number" class="order-item-input__input input-result-calk">
+																				<button class="order-item-input__btn   btn-plus-calk icon-plus"></button>
 
 																			</div>
 																		</td>
@@ -1154,7 +1266,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="popups-order popups-order-create">
+					<div class="popups-order">
 						<div class=" popups-order-inner create-warehouse">
 							<div class="create-warehouse__header">
 								<h4 class="create-warehouse__title m-0">Створення ТТН</h4>
