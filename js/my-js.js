@@ -110,3 +110,26 @@ openTellBtn?.addEventListener('click', ()=> switchPopMailTel('Додати но�
 openAddressBtn?.addEventListener('click', ()=> switchPopMailTel('Додати адресу відділення'))
 openMailBtn?.addEventListener('click', ()=> switchPopMailTel('Додати пошту клієнта'))
 openTTHBtn?.addEventListener('click', ()=> switchPopMailTel('Додати існуючу ТТН'))
+
+//communication with the client
+
+const windowClient = document.querySelector('.communication-popup')
+const closeWindowClient = document.querySelector('.communication-popup__close')
+
+function switchClientWind (open){
+	if(open){
+		windowClient.classList.add('open-window-client')
+	}else{
+		windowClient.classList.remove('open-window-client')
+	}
+}
+
+function checkedWindClient(e){
+	const elem = e.target.classList.contains('communication-popup')
+	if(elem){
+		switchClientWind(false)
+	}
+}
+
+windowClient.addEventListener('click', checkedWindClient)
+closeWindowClient.addEventListener('click', ()=> switchClientPop(false))

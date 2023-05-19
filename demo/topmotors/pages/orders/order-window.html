@@ -474,7 +474,9 @@
 													<div class="order-tel">
 														<div class="order-tel__inner">
 															<p class="order-tel__name name-form-order m-0">Телефон:</p>
-															<a href="tel:380686978088" class='link-form-order'>+380686978088</a>
+															<div class="order-tel__tell-items">
+																<a href="tel:380686978088" class='link-form-order'>+380686978088</a>
+															</div>
 														</div>
 														<button class="order-tel__btn open-tell icon-plus"></button>
 													</div>
@@ -530,29 +532,29 @@
 											<h4 class="order-column__name ">Інформація про замовлення</h4>
 											<div class="order-column-elem">
 												<div class="order-column-elem__select__items-sel">
-												<div class="order-column-elem__select mb-3">
-													<p class="name-form-order mb-2">Способ доставки:</p>
-													<label class="window-order-select m-0 window-order-select_big">
-														<select name="" id="" class="window-order-select__inner">
-															<option value="1">Нова пошта (Відділення - Відділення)</option>
-															<option value="2"> Отримано</option>
-															<option value="3"> У дорозі</option>
-														</select>
-														<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
-													</label>
+													<div class="order-column-elem__select mb-3">
+														<p class="name-form-order mb-2">Способ доставки:</p>
+														<label class="window-order-select m-0 window-order-select_big">
+															<select name="" id="" class="window-order-select__inner">
+																<option value="1">Нова пошта (Відділення - Відділення)</option>
+																<option value="2"> Отримано</option>
+																<option value="3"> У дорозі</option>
+															</select>
+															<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
+														</label>
+													</div>
+													<div class="order-column-elem__select">
+														<p class="name-form-order mb-2">Способ оплати:</p>
+														<label class="window-order-select m-0 window-order-select_big">
+															<select name="" id="" class="window-order-select__inner">
+																<option value="1">Оплата при отриманні</option>
+																<option value="2"> Отримано</option>
+																<option value="3"> У дорозі</option>
+															</select>
+															<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
+														</label>
+													</div>
 												</div>
-												<div class="order-column-elem__select">
-													<p class="name-form-order mb-2">Способ оплати:</p>
-													<label class="window-order-select m-0 window-order-select_big">
-														<select name="" id="" class="window-order-select__inner">
-															<option value="1">Оплата при отриманні</option>
-															<option value="2"> Отримано</option>
-															<option value="3"> У дорозі</option>
-														</select>
-														<i class="icon-arrow-down icon-arrow-down_rith window-order-select__arrow"></i>
-													</label>
-												</div>
-											</div>
 												<p class="name-form-order mt-2">ТТН:</p>
 												<ul class="order-column-elem__cods mb-1">
 													<li class="order-code-item">
@@ -1704,14 +1706,74 @@
 								</svg>
 							</button>
 							<div class="popup-mail-tel__content">
-							
-							<h4 class="popup-mail-tel__title">Логічний заголовок, згідно кнопки</h4>
-							<p class="popup-mail-tel__sub-title">Витрати/додавання телефону і т.д</p>
-							<input type="text" class="popup-mail-tel__input form-control"
-								 placeholder="Поле для ввода текста">
-							<button class="popup-mail-tel__btn btn btn-primary btn-lg">Додати</button>
+
+								<h4 class="popup-mail-tel__title">Логічний заголовок, згідно кнопки</h4>
+								<p class="popup-mail-tel__sub-title">Витрати/додавання телефону і т.д</p>
+								<input type="text" class="popup-mail-tel__input form-control" placeholder="Поле для ввода текста">
+								<button class="popup-mail-tel__btn btn btn-primary btn-lg">Додати</button>
+							</div>
 						</div>
 					</div>
+					<div class="communication-popup open-window-client">
+						<div class="communication-popup__inner">
+							<div class="communication-popup__header">
+								<h4 class="communication-popup__title m-0">Зв’язок з клієнтом</h4>
+								<button class="communication-popup__close">
+									<svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.489 0L17.5 10.9011L24.511 0H34.6987L23.3607 15.8681L35 32H24.73L17.5 20.9011L10.2973 32H0L11.6667 15.8681L0.301252 0H10.489Z"
+											fill="#FF4747" />
+									</svg>
+								</button>
+							</div>
+							<div class="communication-popup__items">
+								<div class="communication-popup__select create-address__selector">
+									<p class="create-address__name">Телефон клієнта</p>
+									<label class="window-order-select m-0 window-order-select_big fw-bold">
+										<select name="" id="" class="window-order-select__inner">
+											<option value="1">+380686978088</option>
+											<option value="2"> Отримано</option>
+											<option value="3"> У дорозі</option>
+										</select>
+										<i class="icon-arrow-down window-order-select__arrow"></i>
+									</label>
+								</div>
+								<div class="communication-popup__item">
+									<p class="create-address__name">Спосіб відправки</p>
+									<div class="communication-popup__choice">
+										<p class="communication-popup__choice-item choice-active-now">Viber</p>
+										<p class="communication-popup__choice-item">Telegram</p>
+										<p class="communication-popup__choice-item">SMS</p>
+									</div>
+								</div>
+							</div>
+							<div class="communication-popup__content">
+								<textarea class="form-control communication-popup__text-area" placeholder='Повідомлення'
+									id="exampleTextarea1" rows="4"></textarea>
+								<div class="communication-popup__dropdown dropdown">
+									<button type="button" class="communication-popup__dropdown-btn btn btn-dark dropdown-toggle"
+										id="dropdownMenuIconButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Шаблони повідомлень
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton7" style="">
+										<a class="dropdown-item" href="#">Шаблон 1</a>
+										<a class="dropdown-item" href="#">Шаблон 1</a>
+										<a class="dropdown-item" href="#">Шаблон 1</a>
+									</div>
+								</div>
+							</div>
+							<div class="communication-popup__footer">
+								<button type="submit" class="communication-popup__btn btn btn-primary me-2">Надіслати</button>
+								<div class="form-check m-0">
+									<label class="form-check-label ">
+										<input type="checkbox" class="form-check-input">
+										Зберегти як шаблон
+										<i class="input-helper"></i>
+										<i class="input-helper"></i>
+									<i class="input-helper"></i></label>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<footer class="footer">
