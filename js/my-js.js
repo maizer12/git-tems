@@ -1,5 +1,5 @@
 //create tth popup
-const popupsAll = document.querySelector('.popups-order')
+const popupsAll = document.querySelector('.create-warehouse')
 const popupCreateBtn = document.querySelector('.create-tth')
 const popupCreateCloseBtn = document.querySelector('.create-warehouse__close ')
 
@@ -12,7 +12,7 @@ function switchPopCreate (e){
 }
 const switchPop = e => {
 	const elem = e.target
-	const one = elem.classList.contains('popups-order')
+	const one = elem.classList.contains('create-warehouse')
 	if (one) {
 		switchPopCreate(false)
 	}
@@ -52,9 +52,7 @@ const ordersItemsAll = document.querySelector('.order-wind-items')
 const inputsResultAll = document.querySelectorAll('.input-result-calk') 
 
 if(inputsResultAll){
-	console.log(inputsResultAll)
 	inputsResultAll.forEach(element => {
-		console.log(element)
 		element.disabled = true
 	}); 
 }
@@ -74,3 +72,39 @@ ordersItemsAll?.addEventListener('click', (e)=>{
 		input.value = num  - 1
 	}
 })
+//popup num-mail-address
+const popupMailTel = document.querySelector('.popup-mail-tel')
+const closeMailTel = document.querySelector('.popup-mail-tel__close')
+const popupTitle =	document.querySelector('.popup-mail-tel__title')
+//3 buttons
+const openTellBtn = document.querySelector('.open-tell')
+const openAddressBtn = document.querySelector('.open-address')
+const openMailBtn = document.querySelector('.open-mail')
+
+
+
+
+
+function switchPopMailTel(title){
+	if(title){
+		popupMailTel.classList.add('popup-mail-tel-active')
+		popupTitle.textContent = title
+	}else{
+		popupMailTel.classList.remove('popup-mail-tel-active')
+	}
+}
+
+function checkedInline (e){
+	const elem = e.target.classList.contains('popup-mail-tel')
+	if(elem){
+		switchPopMailTel(false)
+	}
+}
+
+popupMailTel?.addEventListener('click', checkedInline)
+closeMailTel?.addEventListener('click', ()=> switchPopMailTel(false))
+
+
+openTellBtn?.addEventListener('click', ()=> switchPopMailTel('Додати номер клієнта'))
+openAddressBtn?.addEventListener('click', ()=> switchPopMailTel('Додати адресу відділення'))
+openMailBtn?.addEventListener('click', ()=> switchPopMailTel('Додати пошту клієнта'))

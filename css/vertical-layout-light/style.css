@@ -32907,34 +32907,27 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
-.popups-order {
-  transform: translateX(200%);
-  transition: 0.7s;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 2;
+.create-warehouse {
   display: flex;
   justify-content: center;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  transform: translateX(200%);
+  transition: 0.7s;
+  padding-top: 122px;
 }
 
-.popups-order-create {
-  transform: translateX(0);
-}
-
-.popups-order-inner {
-  background-color: #fff;
-}
-
-.create-warehouse {
+.create-warehouse__inner {
   padding: 38px 32px;
   max-width: 1586px;
   width: 100%;
+  background-color: #fff;
   height: fit-content;
-  margin-top: 122px;
 }
 
 .create-warehouse__create {
@@ -32969,6 +32962,10 @@ input::-webkit-inner-spin-button {
   color: #000000;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.popups-order-create {
+  transform: translateX(0);
 }
 
 .create-selectors {
@@ -33026,11 +33023,11 @@ input::-webkit-inner-spin-button {
   margin-left: 4px;
 }
 
-.icon-plus {
+.order-tel__btn {
   transition: 0.6s;
 }
 
-.icon-plus:hover {
+.order-tel__btn:hover {
   color: black;
 }
 
@@ -33392,7 +33389,8 @@ input::-webkit-inner-spin-button {
   max-width: 180px;
 }
 
-.popups-create-client__input, .popups-create-client .create-place-item__input {
+.popups-create-client__input,
+.popups-create-client .create-place-item__input {
   max-width: 180px;
   font-size: 12px;
   width: 100%;
@@ -33426,6 +33424,94 @@ input::-webkit-inner-spin-button {
 
 .window-order-select__arrow {
   right: 15px;
+}
+
+.popup-mail-tel {
+  position: fixed;
+  transition: 0.6s;
+  transform: scale(0);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-mail-tel__inner {
+  background-color: #fff;
+  padding: 17px 21px 94px;
+  height: fit-content;
+  max-width: 574px;
+  width: 100%;
+}
+
+.popup-mail-tel__close {
+  margin-left: auto;
+  display: block;
+  margin-bottom: 21px;
+  background: none;
+  border: 0;
+  width: fit-content;
+}
+
+.popup-mail-tel__close svg path {
+  transition: 0.4s;
+}
+
+.popup-mail-tel__close:hover svg path {
+  fill: black;
+}
+
+.popup-mail-tel__title {
+  text-align: center;
+  margin-bottom: 26px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.popup-mail-tel__sub-title {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  letter-spacing: 0em;
+  max-width: 342px;
+}
+
+.popup-mail-tel__input {
+  padding: 15px 13px;
+  max-width: 342px;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  letter-spacing: 0em;
+}
+
+.popup-mail-tel__content {
+  max-width: 394px;
+  margin: 0 auto;
+}
+
+.popup-mail-tel__btn {
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.popup-mail-tel-active {
+  transform: scale(1);
 }
 
 @media (max-width: 1200px) {

@@ -632,11 +632,11 @@ input::-webkit-inner-spin-button {
 		width: 100%;
 	}
 }
-.icon-arrow-down{
+.icon-arrow-down {
 	pointer-events: none;
 }
-.icon-arrow-down_rith{
-		right: 7px !important;
+.icon-arrow-down_rith {
+	right: 7px !important;
 }
 .order-column {
 	&__inner {
@@ -688,8 +688,8 @@ input::-webkit-inner-spin-button {
 	letter-spacing: 0em;
 	text-align: left;
 }
-.input-result-calk{
-	background-color:#fff;
+.input-result-calk {
+	background-color: #fff;
 }
 .name-form-input {
 	font-family: Roboto;
@@ -1245,32 +1245,28 @@ input::-webkit-inner-spin-button {
 .content-wrapper {
 	position: relative;
 }
-.popups-order {
-	transform: translateX(200%);
-	transition: 0.7s;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: rgba(rgb(0, 0, 0), 0.3);
-	z-index: 2;
-	display: flex;
-	justify-content: center;
-}
-.popups-order-create {
-	transform: translateX(0);
-}
-.popups-order-inner {
-	background-color: #fff;
-}
 
 .create-warehouse {
-	padding: 38px 32px;
-	max-width: 1586px;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(rgb(0, 0, 0), 0.3);
 	width: 100%;
-	height: fit-content;
-	margin-top: 122px;
+	height: 100%;
+	transform: translateX(200%);
+	transition: 0.7s;
+
+	padding-top: 122px;
+	&__inner {
+		padding: 38px 32px;
+		max-width: 1586px;
+		width: 100%;
+		background-color: #fff;
+		height: fit-content;
+	}
 	&__create {
 		margin-top: 68px;
 	}
@@ -1306,7 +1302,9 @@ input::-webkit-inner-spin-button {
 		text-align: left;
 	}
 }
-
+.popups-order-create {
+	transform: translateX(0);
+}
 .create-selectors {
 	display: flex;
 	column-gap: 26px;
@@ -1359,7 +1357,7 @@ input::-webkit-inner-spin-button {
 	}
 }
 
-.icon-plus {
+.order-tel__btn {
 	transition: 0.6s;
 	&:hover {
 		color: black;
@@ -1667,60 +1665,145 @@ input::-webkit-inner-spin-button {
 		line-height: 14px;
 		letter-spacing: 0em;
 		text-align: center;
-		color:#000000;
+		color: #000000;
 	}
-	&__close{
-		background:none;
-		border:0;
-		svg{
-			path{
+	&__close {
+		background: none;
+		border: 0;
+		svg {
+			path {
 				transition: 0.4s;
 			}
 		}
-		&:hover{
-			svg{
-				path{
-					fill:black;
+		&:hover {
+			svg {
+				path {
+					fill: black;
 				}
 			}
 		}
 	}
-	&__items{
+	&__items {
 		margin-top: 43px;
 		display: flex;
-		column-gap:26px;
+		column-gap: 26px;
 	}
-	&__select{
+	&__select {
 		max-width: 180px;
 	}
-	&__input, .create-place-item__input{
+	&__input,
+	.create-place-item__input {
 		max-width: 180px;
 		font-size: 12px;
 		width: 100%;
 	}
-	&__input_width{
+	&__input_width {
 		max-width: 216px;
-		width: 100%; 
-		.create-place-item__input{
+		width: 100%;
+		.create-place-item__input {
 			max-width: 100%;
 			width: 100%;
 		}
 	}
-	&__create{
+	&__create {
 		margin-top: 50px;
 	}
-	.create-address__selector_wid{
+	.create-address__selector_wid {
 		max-width: 216px;
 		.popups-create-client__select {
 			max-width: 100%;
 		}
 	}
 }
-.popups-create-client-active{
+.popups-create-client-active {
 	transform: scale(1);
 }
-.window-order-select__arrow{
+.window-order-select__arrow {
 	right: 15px;
+}
+.popup-mail-tel {
+	position: fixed;
+	transition: 0.6s;
+	transform: scale(0);
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	background-color: rgba(black, 0.3);
+	&__inner {
+		background-color: #fff;
+		padding: 17px 21px 94px;
+		height: fit-content;
+		max-width: 574px;
+		width: 100%;
+
+	}
+	&__close {
+		margin-left: auto;
+		display: block;
+		margin-bottom: 21px;
+		background: none;
+		border: 0;
+		width: fit-content;
+		svg {
+			path {
+				transition: 0.4s;
+			}
+		}
+		&:hover {
+			svg {
+				path {
+					fill: black;
+				}
+			}
+		}
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 26px;
+		font-family: Roboto;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+	&__sub-title {
+		font-family: Roboto;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.2;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		letter-spacing: 0em;
+		max-width: 342px;
+	}
+	&__input {
+		padding: 15px 13px;
+		max-width: 342px;
+		margin: 0 auto;
+		font-family: Roboto;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		color:#000000;
+		letter-spacing: 0em;
+	}
+	&__content {
+		max-width: 394px;
+		margin: 0 auto;
+	}
+	&__btn {
+		margin: 0 auto;
+		margin-top: 16px;
+	}
+}
+.popup-mail-tel-active{
+	transform: scale(1);
 }
 @media (max-width: 1200px) {
 	.min-wid-cl {
