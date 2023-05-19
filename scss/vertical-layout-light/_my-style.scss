@@ -1638,6 +1638,8 @@ input::-webkit-inner-spin-button {
 	padding-top: 240px;
 	display: flex;
 	justify-content: center;
+	transition: 0.7s;
+	transform: scale(0);
 	&__inner {
 		background-color: #fff;
 		height: fit-content;
@@ -1688,7 +1690,7 @@ input::-webkit-inner-spin-button {
 		font-size: 12px;
 		width: 100%;
 	}
-	.popups-create-client__input_width{
+	&__input_width{
 		max-width: 216px;
 		width: 100%; 
 		.create-place-item__input{
@@ -1705,6 +1707,9 @@ input::-webkit-inner-spin-button {
 			max-width: 100%;
 		}
 	}
+}
+.popups-create-client-active{
+	transform: scale(1);
 }
 .window-order-select__arrow{
 	right: 15px;

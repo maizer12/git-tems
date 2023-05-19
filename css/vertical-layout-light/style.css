@@ -33330,6 +33330,8 @@ input::-webkit-inner-spin-button {
   padding-top: 240px;
   display: flex;
   justify-content: center;
+  transition: 0.7s;
+  transform: scale(0);
 }
 
 .popups-create-client__inner {
@@ -33385,12 +33387,12 @@ input::-webkit-inner-spin-button {
   width: 100%;
 }
 
-.popups-create-client .popups-create-client__input_width {
+.popups-create-client__input_width {
   max-width: 216px;
   width: 100%;
 }
 
-.popups-create-client .popups-create-client__input_width .create-place-item__input {
+.popups-create-client__input_width .create-place-item__input {
   max-width: 100%;
   width: 100%;
 }
@@ -33405,6 +33407,10 @@ input::-webkit-inner-spin-button {
 
 .popups-create-client .create-address__selector_wid .popups-create-client__select {
   max-width: 100%;
+}
+
+.popups-create-client-active {
+  transform: scale(1);
 }
 
 .window-order-select__arrow {
