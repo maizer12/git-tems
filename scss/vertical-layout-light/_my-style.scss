@@ -1109,6 +1109,7 @@ input::-webkit-inner-spin-button {
 	display: flex;
 	padding: 12px 4px;
 	border: #ededed 1px solid;
+	max-width: fit-content;
 	&__input {
 		font-family: Roboto;
 		font-size: 14px;
@@ -2101,10 +2102,16 @@ input::-webkit-inner-spin-button {
 			width: 100%;
 		}
 	}
+	.card-body-inner__table{
+		width: 60%;
+	}
 }
 @media (max-width: 1300px) {
 	.create-place-item .form-check {
 		margin-left: 15px;
+	}
+	.card-body-inner__table{
+		width: 50%;
 	}
 }
 @media (max-width: 1250px) {
@@ -2119,6 +2126,7 @@ input::-webkit-inner-spin-button {
 		font-size: 26px;
 		width: 100%;
 	}
+	
 }
 @media (max-width: 1200px) {
 	.min-wid-cl {
@@ -2184,8 +2192,19 @@ input::-webkit-inner-spin-button {
 		margin-bottom: 45px;
 	}
 }
+@media (max-width: 1100px) {
+	.card-body-inner__form{
+		max-width: 290px;
+	}
+}
+.sidebar-icon-only .pop-left-men {
+	padding-left: 0;
+}
 @media (max-width: 990px) {
 	.pop-left-men {
 		padding-left: 0;
+	}
+	.card-body-inner__form{
+		max-width: 290px;
 	}
 }

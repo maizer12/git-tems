@@ -32750,6 +32750,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   padding: 12px 4px;
   border: #ededed 1px solid;
+  max-width: fit-content;
 }
 
 .order-item-input__input {
@@ -33839,11 +33840,17 @@ input::-webkit-inner-spin-button {
   .storage-info-col .col-md-6 {
     width: 100%;
   }
+  .card-body-inner__table {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1300px) {
   .create-place-item .form-check {
     margin-left: 15px;
+  }
+  .card-body-inner__table {
+    width: 50%;
   }
 }
 
@@ -33924,9 +33931,22 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media (max-width: 1100px) {
+  .card-body-inner__form {
+    max-width: 290px;
+  }
+}
+
+.sidebar-icon-only .pop-left-men {
+  padding-left: 0;
+}
+
 @media (max-width: 990px) {
   .pop-left-men {
     padding-left: 0;
+  }
+  .card-body-inner__form {
+    max-width: 290px;
   }
 }
 
