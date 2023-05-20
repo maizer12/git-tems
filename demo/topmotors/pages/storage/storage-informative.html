@@ -4,34 +4,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Користувачі</title>
+	<title>Склади інформація</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../../../vendors/ti-icons/css/themify-icons.css">
-	<link rel="stylesheet" href="../../../../vendors/dropzone/dropzone.css">
-	<link rel="stylesheet" href="../../../../vendors/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-1to10.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-horizontal.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-movie.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-pill.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-reversed.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bars-square.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/bootstrap-stars.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/css-stars.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/examples.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/fontawesome-stars-o.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-bar-rating/fontawesome-stars.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-asColorPicker/css/asColorPicker.min.css">
-	<link rel="stylesheet" href="../../../../vendors/x-editable/bootstrap-editable.css">
-	<link rel="stylesheet" href="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-	<link rel="stylesheet" href="../../../../vendors/dropify/dropify.min.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-file-upload/uploadfile.css">
-	<link rel="stylesheet" href="../../../../vendors/jquery-tags-input/jquery.tagsinput.min.css">
-	<link rel="stylesheet" href="../../../../vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css">
-	<!-- End plugin css for this page -->
-	<!-- inject:css -->
+	<link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+	<link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
 	<link rel="stylesheet" href="../../../../css/vertical-layout-light/style.css">
-	<!-- endinject -->
 	<link rel="shortcut icon" href="../../../../images/favicon.png" />
+	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid.min.css">
+	<link rel="stylesheet" href="../../../../vendors/jsgrid/jsgrid-theme.min.css">
+	<link rel="stylesheet" href="../../../../vendors/simple-line-icons/css/simple-line-icons.css">
 </head>
 
 <body class="sidebar-dark">
@@ -329,15 +314,14 @@
 							<span class="menu-title">Головна</span>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../storage/storage.html">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
 							<i class="ti-settings menu-icon"></i>
 							<span class="menu-title">Склади</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#e-commerce" aria-expanded="false"
-							aria-controls="e-commerce">
+						<a class="nav-link" href="../orders/orders.html">
 							<i class="ti-shopping-cart menu-icon"></i>
 							<span class="menu-title">Замовлення</span>
 							<i class="menu-arrow"></i>
@@ -363,7 +347,7 @@
 						<a class="nav-link" href="../connections/connections.html">
 							<i class="ti-layers-alt menu-icon"></i>
 							<span class="menu-title">Зв’язки</span>
-							<i class="menu-arrow"></i>
+							<i class="ti-layers-alt menu-arrow"></i>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -378,8 +362,8 @@
 							<span class="menu-title">Журнал подій</span>
 						</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href='#'>
+					<li class="nav-item">
+						<a class="nav-link" href="../users/users.html">
 							<i class="ti-user menu-icon"></i>
 							<span class="menu-title">Користувачі</span>
 							<i class="menu-arrow"></i>
@@ -387,196 +371,171 @@
 					</li>
 				</ul>
 			</nav>
-			<!-- partial -->
 			<div class="main-panel">
 				<div class="content-wrapper">
-					<div class="card">
-						<div class="card-body card-body-wid">
-							<div class="df-it-sp users-header">
-								<div class="users-header__item">
-									<h4 class="card-title mt-2 mb-3">Клієнти</h4>
-									<div class="dataTables_length mb-4" id="order-listing_length">
-										<label class='df-it-sp'><span class='d-block mar-r'>Показувати</span>
-											<select name="order-listing_length" aria-controls="order-listing"
-												class="custom-select custom-select-sm form-control">
-												<option value="5">5</option>
-												<option value="10">10</option>
-												<option value="15">15</option>
-												<option value="-1">All</option>
-											</select>
-											<span class='mar-n d-block'>entries</span> </label>
+					<div class="row">
+						<div class="col-md-12 grid-margin">
+							<div class="row storage-info-header">
+								<h4 class="storage-info-header__name font-weight-bold">Склад на хрещатику</h4>
+								<div class="col-12 col-xl-7">
+									<div class="d-flex align-items-center justify-content-between flex-wrap">
+										<div class="border-right pe-4 mb-3 mb-xl-0">
+											<p class="text-muted">Проданно на сумму</p>
+											<h4 class="mb-0 font-weight-bold">250 000 UAH</h4>
+										</div>
+										<div class="border-right pe-4 mb-3 mb-xl-0">
+											<p class="text-muted">Прибутку з склада</p>
+											<h4 class="mb-0 font-weight-bold">75 000 UAH</h4>
+										</div>
+										<div class="border-right pe-4 mb-3 mb-xl-0">
+											<p class="text-muted">Всього реалізацій</p>
+											<h4 class="mb-0 font-weight-bold">140</h4>
+										</div>
+										<div class="pe-3 mb-3 mb-xl-0">
+											<p class="text-muted">Позицій на складі</p>
+											<h4 class="mb-0 font-weight-bold">4006</h4>
+										</div>
 									</div>
 								</div>
-								<button type="button" class=" btn btn-primary btn-lg">Додати клієнта</button>
 							</div>
-							<div class="card-body-inner">
-								
-								<div class="card-body-inner__table col-8">
-									<table id="order-listing" class="table">
-										<thead class='table-bd'>
-											<tr>
-												<th>Ім’я клієнта <i class="icon-arrow-up"></i></th>
-												<th>Телефон</th>
-												<th>Группа клієнта</th>
-												<th>Дата створення</th>
-												<th>Тип клієнта</th>
-												<th>Управління</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<div class="form-check mx-sm-2">
-														<label class="form-check-label">
-															<input type="checkbox" class="form-check-input" checked="">
-															Alex Kar
-															<i class="input-helper"></i></label>
-													</div>
-												</td>
-												<td>+380686978088</td>
-												<td>Опт</td>
-												<td>22/03/2021</td>
-												<td class='badge-row'>
-													<p class="badge badge-primary">Постачальник</p>
-													<p class="badge badge-success">Клієнт</p>
-													<p class="badge badge-danger">Дропшиппінг</p>
-												</td>
-												<td>
-													<div class="dropdown">
-														<button class="df-it pad-btn btn btn-primary dropdown-toggle" type="button"
-															id="dropdownMenuIconButton6" data-bs-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<i class="mdi mdi-lead-pencil"></i>
-														</button>
-														<div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6">
-															<h6 class="dropdown-header">Settings</h6>
-															<a class="dropdown-item" href="#">Action</a>
-															<a class="dropdown-item" href="#">Another action</a>
-															<a class="dropdown-item" href="#">Something else here</a>
-															<div class="dropdown-divider"></div>
-															<a class="dropdown-item" href="#">Separated link</a>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="form-check mx-sm-2">
-														<label class="form-check-label">
-															<input type="checkbox" class="form-check-input" checked="">
-															Alex Kar
-															<i class="input-helper"></i></label>
-													</div>
-												</td>
-												<td>+380686978088</td>
-												<td>Опт</td>
-												<td>22/03/2021</td>
-												<td class='badge-row'>
-													<p class="badge badge-primary">Постачальник</p>
-													<p class="badge badge-success">Клієнт</p>
-													<p class="badge badge-danger">Дропшиппінг</p>
-												</td>
-												<td>
-													<div class="dropdown">
-														<button class="df-it pad-btn btn btn-primary dropdown-toggle" type="button"
-															id="dropdownMenuIconButton6" data-bs-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<i class="mdi mdi-lead-pencil"></i>
-														</button>
-														<div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton6">
-															<h6 class="dropdown-header">Settings</h6>
-															<a class="dropdown-item" href="#">Action</a>
-															<a class="dropdown-item" href="#">Another action</a>
-															<a class="dropdown-item" href="#">Something else here</a>
-															<div class="dropdown-divider"></div>
-															<a class="dropdown-item" href="#">Separated link</a>
-														</div>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+						</div>
+					</div>
+					<div class="row storage-info-col">
+						<div class="col-md-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<p class="card-title">Продажі за період</p>
+									<p class="text-muted font-weight-light">The total number of sessions within the date range. It is the
+										period time a user is actively engaged with your website, page or app, etc</p>
+									<div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
+									<canvas id="sales-chart"></canvas>
 								</div>
-								<div class="card-body-inner__form col-4">
-									<div class="card-body-inner__header"> <i class="mdi mdi-filter"></i> Фільтр</div>
-									<form class="forms-sample">
-										<div class="form-group form-group_bd">
-											<label for="exampleInputUsername1">
-												<p class='fw-bold'>Ім’я клієнта</p>
-											</label>
-											<input type="text" class="form-control rounded-1" id="exampleInputUsername1"
-												placeholder="Ім’я клієнта">
-
-										</div>
-										<div class="form-group form-group_bd">
-											<label for="exampleInputUsernum1">
-												<p class='fw-bold'>Телефон</p>
-											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputUsernum1"
-												placeholder="Телефон">
-										</div>
-										<div class="form-group form-group_bd">
-											<label for="exampleInputGrup1">
-												<p class='fw-bold'>Группа клієнта</p>
-											</label>
-											<input type="text" class="form-control rounded-1" id="exampleInputGrup1"
-												placeholder="Группа клієнта">
-										</div>
-										<div class="form-group form-group_bd">
-											<label for="exampleInputState1">
-												<p class='fw-bold'>Статус</p>
-											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputState1" placeholder="Статус">
-										</div>
-										<div class="form-group form-group_bd">
-											<label for="exampleInputUserType1">
-												<p class='fw-bold'>Тип клієнта</p>
-											</label>
-											<select class="form-select fw-bold" aria-label="Default select example">
-												<option selected>Постачальник</option>
-												<option value="1">One</option>
-												<option value="2">Two</option>
-												<option value="3">Three</option>
-											</select>
-										</div>
-										<div class="form-group form-group_bd">
-											<label for="exampleInputIP1">
-												<p class='fw-bold'>IP</p>
-											</label>
-											<input type="number" class="form-control rounded-1" id="exampleInputIP1" placeholder="IP">
-										</div>
-										<div class="form-group form-group_bd ">
-											<div class="card-body p-0">
-												<label for="exampleInputDate">
-													<p class='fw-bold'>Date Added</p>
-												</label>
-												<div id="datepicker-popup" id='exampleInputDate' class="input-group date datepicker">
-													<input type="text" class="form-control ">
-													<span class="input-group-addon date-btn-address input-group-append  ">
-														<span class="fa fa-calendar input-group-text pl-14 pr-14"></span>
-													</span>
-												</div>
+								<div class="card border-right-0 border-left-0 border-bottom-0">
+									<div class="d-flex justify-content-center justify-content-md-end">
+										<div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+											<button
+												class="btn btn-lg btn-outline-light dropdown-toggle rounded-0 border-top-0 border-bottom-0"
+												type="button" id="dropdownMenuDate2" data-bs-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="true">
+												Today
+											</button>
+											<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+												<a class="dropdown-item" href="#">January - March</a>
+												<a class="dropdown-item" href="#">March - June</a>
+												<a class="dropdown-item" href="#">June - August</a>
+												<a class="dropdown-item" href="#">August - November</a>
 											</div>
 										</div>
-
-										<button type="submit" class="btn ms-auto d-flex align-items-center p-2.5 
-										pt-2.3 pb-2.3	fs-6 btn-outline-secondary btn-fw">
-											<i class="mdi mdi-filter"></i> Filter</button>
-									</form>
-
+										<button class="btn btn-lg btn-outline-light text-primary rounded-0 border-0 d-none d-md-block"
+											type="button"> View all </button>
+									</div>
 								</div>
-
 							</div>
-							<div class="pagination-body-footer d-flex">
-								<p class="pagination-body-footer__text">Показувати 1 по 10 з 10 позицій</p>
-								<ul class="pagination flex-wrap">
-									<li class="page-item"><button class="page-link">Попередня</button></li>
-									<li class="page-item active"><a class="page-link" href="#">1</a></li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">4</a></li>
-									<li class="page-item"><button class="page-link" href="#">Наступна</button></li>
-								</ul>
+						</div>
+						<div class="col-md-6 grid-margin stretch-card">
+							<div class="card storage-info-table">
+								<h5 class="storage-info-table__title">Залишки на складі < 3 шт </h5>
+										<div class="storage-info-table__header">
+											<h6 class="storage-info-table__name">Назва товару</h6>
+											<h6 class="storage-info-table__name">Залишок</h6>
+										</div>
+										<ul class="storage-info-table__items">
+											<li class="storage-info-table__item">
+												<p class="storage-info-table__text">Kentucky</p>
+												<p class="storage-info-table__text">2</p>
+											</li>
+											<li class="storage-info-table__item">
+												<p class="storage-info-table__text">Kentucky</p>
+												<p class="storage-info-table__text">2</p>
+											</li>
+											<li class="storage-info-table__item">
+												<p class="storage-info-table__text">Kentucky</p>
+												<p class="storage-info-table__text">2</p>
+											</li>
+											<li class="storage-info-table__item">
+												<p class="storage-info-table__text">Kentucky</p>
+												<p class="storage-info-table__text">2</p>
+											</li>
+											<li class="storage-info-table__item">
+												<p class="storage-info-table__text">Kentucky</p>
+												<p class="storage-info-table__text">2</p>
+											</li>
+											<li class="storage-info-table__item">
+												<p class="storage-info-table__text">Kentucky</p>
+												<p class="storage-info-table__text">2</p>
+											</li>
+										</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row storage-info-col">
+						<div class="col-md-6 grid-margin stretch-card">
+							<div class="order-window-event order-window-event_pd">
+								<div class="order-window-event__header">
+									<p class="order-window-event__name name-form-order m-0">Журнал подій</p>
+									<a href="#" class="order-window-event__next">Дивитись всі подіі</a>
+								</div>
+								<div class="order-window-event__inner">
+
+									<ul class="order-window-event__items">
+										<li class="window-event-item">
+											<i class="ti-shopping-cart"></i>
+											<div class="window-event-item__content">
+												<a href="#" class="window-event-item__name">
+													Продаж товару
+												</a>
+												<p class="window-event-item__desc">
+													Назва товару x 2 шт
+												</p>
+												<ul class="window-event-item__items">
+													<li class="window-event-item__item">9:30 am</li>
+												</ul>
+											</div>
+										</li>
+										<li class="window-event-item">
+											<i class="ti-shopping-cart"></i>
+											<div class="window-event-item__content">
+												<a href="#" class="window-event-item__name">
+													Продаж товару
+												</a>
+												<p class="window-event-item__desc">
+													Назва товару x 2 шт
+												</p>
+												<ul class="window-event-item__items">
+													<li class="window-event-item__item">9:30 am</li>
+												</ul>
+											</div>
+										</li>
+										<li class="window-event-item">
+											<i class="ti-shopping-cart"></i>
+											<div class="window-event-item__content">
+												<a href="#" class="window-event-item__name">
+													Продаж товару
+												</a>
+												<p class="window-event-item__desc">
+													Назва товару x 2 шт
+												</p>
+												<ul class="window-event-item__items">
+													<li class="window-event-item__item">9:30 am</li>
+												</ul>
+											</div>
+										</li>
+										<li class="window-event-item">
+											<i class="ti-shopping-cart"></i>
+											<div class="window-event-item__content">
+												<a href="#" class="window-event-item__name">
+													Продаж товару
+												</a>
+												<p class="window-event-item__desc">
+													Назва товару x 2 шт
+												</p>
+												<ul class="window-event-item__items">
+													<li class="window-event-item__item">9:30 am</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -591,6 +550,7 @@
 				</footer>
 			</div>
 		</div>
+		<!-- page-body-wrapper ends -->
 	</div>
 	<script src="../../../../vendors/js/vendor.bundle.base.js"></script>
 	<script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
@@ -600,12 +560,20 @@
 	<script src="../../../../js/template.js"></script>
 	<script src="../../../../js/settings.js"></script>
 	<script src="../../../../js/todolist.js"></script>
+	<!-- endinject -->
+	<!-- Custom js for this page-->
 	<script src="../../../../js/data-table.js"></script>
 	<script src="../../../../js/js-grid.js"></script>
+	<script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+	<script src="../../../../vendors/chart.js/Chart.min.js"></script>
+	<!-- endinject -->
+	<!-- Plugin js for this page -->
 	<script src="../../../../vendors/jsgrid/jsgrid.min.js"></script>
+	<script src="../../../../js/js-grid.js"></script>
 	<script src="../../../../js/db.js"></script>
-	<script src="../../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-	<script src="../../../../js/formpickers.js"></script>
+	<script src="../../../../js/dashboard.js"></script>
+	<!-- End custom js for this page-->
+	<!-- End custom js for this page-->
 </body>
 
 </html>
